@@ -1,0 +1,39 @@
+footer {
+    background-color: rgb(20,11,18);
+    color: white;
+    font-family: 'Mulish: 400px;';
+    text-transform: uppercase;
+    font-size: var(--footer3);
+    height: 488px;
+    display: block;
+    padding-left: 7.2%;
+    padding-right: 21.05%;
+    padding-top: 5.5%;
+    line-height: 160%;
+}
+
+footer > a, footer>p>a{
+    color: white;
+}
+
+footer > h2 {
+    color: white;
+    font-size: var(--footer1);
+    margin-bottom: 27px;
+}
+
+footer > h3{
+    color: white;
+    font-size: var(--footer2);
+    margin-bottom: 10px;
+}
+footer span{
+    display: block;
+    margin-top: 0;
+    font-family: 'Mulish: 200px;';
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}

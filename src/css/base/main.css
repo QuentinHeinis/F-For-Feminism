@@ -1,0 +1,47 @@
+body {
+    background-color: var(--c0);
+    color: var(--c7);
+    font-family: 'liberationsans_regular_macroman'
+}
+
+strong,
+q{
+    color: var(--c5);
+}
+
+
+.test{
+    background-color: transparent;
+
+}
+
+section a{
+    text-decoration: none;
+    color: var(--c7);
+}
+
+.test2{
+    background-color: red ;
+    height: 100px;
+    width: 100%;
+}
+
+
+
+
+.HRC{
+    background-color: var(--c1);
+    width: 18.4%;
+    height: 22.76px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.BLC{
+    background-color: var(--c1);
+    width: 18.4%;
+    height: 22.76px;
+    margin-right: auto;
+    margin-left: 0; 
+}
+

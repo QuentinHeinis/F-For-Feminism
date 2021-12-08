@@ -1,0 +1,19 @@
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+}
+
+
+.logo{
+  height: 64px;
+  width: auto;
+}

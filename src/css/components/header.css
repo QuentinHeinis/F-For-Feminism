@@ -1,0 +1,43 @@
+body > header {
+    background-color: rgb(27, 4, 22);
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    width: 100%;
+    height: 63px;
+    
+}
+.MenuBtn{
+    display: flex;
+    background: green;
+    border: transparent;
+    color: var(--c0);
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    -ms-flex-align: start;
+    flex: 1;
+    list-style: none;
+
+}
+
+.langue{
+    text-align: center;
+    display: flex;
+    width: 32px;
+    height: 24px;
+    clip-path: path("M0 1C0 0.447716 0.447715 0 1 0H30.447C31.1743 0 31.6583 0.751704 31.3574 1.4138L27.1881 10.5862C27.0686 10.8491 27.0686 11.1509 27.1881 11.4138L31.3574 20.5862C31.6583 21.2483 31.1743 22 30.447 22H1C0.447715 22 0 21.5523 0 21V1Z");
+    background: var(--c0);
+    border: none;
+}
+
+.lune{
+    display: flex;
+    float: right;
+    width: 22px;
+    height: 22px;
+}
+

@@ -1,0 +1,78 @@
+article{
+    width: 100%;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 47px;
+    margin-top: 47px;
+}
+
+.art{
+    width: 81.1%;
+    background-color: var(--fondArtC);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 13.5px 40px 13.5px;   
+}
+
+.button{
+    appearance: none;
+    margin-top: -25.29px;
+    border-radius: 4px;
+    background-color: var(--c6);
+    height: 58px;
+    width: 187px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0px;
+    display: table;
+    padding: 0;
+    clip-path: path("M4 0.5H180.179C182.852 0.5 184.538 3.37587 183.233 5.70888L170.326 28.7792C169.888 29.5618 169.903 30.5189 170.365 31.2876L182.93 52.1973C184.332 54.53 182.651 57.5 179.93 57.5H4C2.067 57.5 0.5 55.933 0.5 54V4C0.5 2.067 2.067 0.5 4 0.5Z");
+    
+}
+
+.aButton {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    color: var(--c0);
+    float: middle;    
+}
+.aButton::before{
+    content: "➔";
+    font-size: 20px;
+    vertical-align: middle;  
+}
+
+.art::before{
+    content: "";
+    background-color: var(--c1);
+    width: 18.4%;
+    height: 22.76px;
+
+}
+
+.art::after{
+    content: "";
+    background-color: var(--c1);
+    width: 18.4%;
+    height: 22.76px;
+}
+
+section >header>h2{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--c6);
+}
+
+section >header>h2::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: var(--c6);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
