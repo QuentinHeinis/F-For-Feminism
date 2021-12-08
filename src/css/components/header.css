@@ -37,7 +37,7 @@ nav{
 .lune{
     display: flex;
     float: right;
-    width: 22px;
-    height: 22px;
+    width: 32px;
+    height: auto;
 }
 
