@@ -9,67 +9,68 @@
     <title>F For Feminism</title>
 </head>
 <body>
-    <header x-data="{isOpen: false}">
-        <img class="logo" src="/public/icones/Logoclair.png" alt="Logo">
-        <button class="langue"> EN </button>
+    <header x-data="{isOpen: false}" class="header">
+        <img class="header__logo logo" src="/public/icones/Logoclair.png" alt="Logo">
+        <button class="header__btn-langue langue"> EN </button>
         <a href="#"><img src="./public/icones/lune_sombre.png" alt="logo mode sombre" class="lune"></a>
-        <button  class="MenuBtn" x-on:click="isOpen = !isOpen;">
+        <button  class="header__navBtn MenuBtn" x-on:click="isOpen = !isOpen;">
             <span></span>
         </button>
-        <nav x-show="isOpen">
-            <ul>
-                <li><a href="./index.html">F For Feminism</a></li>
-                <li><a href="/">Se renseigner sur le féminisme</a></li>
-                <li><a href="./video.html">Vidéo micro-trottoir</a></li>
-                <li><a href="./autres_projets.html">Voir les autres projets</a></li>
-                <li><a href="./contact.html">Nous Contacter</a></li>
+        <nav x-show="isOpen" class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="./index.html">F For Feminism</a></li>
+                <li class="menu__item"><a href="/">Se renseigner sur le féminisme</a></li>
+                <li class="menu__item"><a href="./video.html">Vidéo micro-trottoir</a></li>
+                <li class="menu__item"><a href="./autres_projets.html">Voir les autres projets</a></li>
+                <li class="menu__item"><a href="./contact.html">Nous Contacter</a></li>
             </ul>
         </nav>
     </header>
-    <h1>F For Feminism</h1>
-    
-    <img src="./public/img/accueil_img.webp" alt="Image provocante représentant une femme">
-    <span>Et si la femme n’avait finalement pas de place assignée, si elle était libre de choisir ce qu’elle veut faire de son corps, de sa vie…</span>
-    
+    <div class="hero">
+        <h1 class="hero__title">F For Feminism</h1>
+        
+        <img class="hero__img" src="./public/img/accueil_img.webp" alt="Image provocante représentant une femme">
+        <span class="hero__dspt">Et si la femme n’avait finalement pas de place assignée, si elle était libre de choisir ce qu’elle veut faire de son corps, de sa vie…</span>
+    </div>
 
     <section>
         <header>
             <h2>Se renseigner sur le féminisme</h2>
         </header>
 
-        <article>
-            <div class="test"></div>
-            <div class="art">
-                <h3>L’évolution du féminisme dans le monde</h3>
-                <img src="./public/img/image_article_nb.webp" alt="test">
-                <p>Le féminisme à pour chaque pays une place plus ou moins importante. D’une partie à une autre du monde, le féminisme va être développé à une autre échelle. Cette échelle va varier en temps et en impact.</p>
+        <article class="card">
+            <div class="card__design test"></div>
+            <div class="card__content art">
+                <h3 class="card__title">L’évolution du féminisme dans le monde</h3>
+                <img class="card__img" src="./public/img/image_article_nb.webp" alt="test">
+                <p class="card__txt" >Le féminisme à pour chaque pays une place plus ou moins importante. D’une partie à une autre du monde, le féminisme va être développé à une autre échelle. Cette échelle va varier en temps et en impact.</p>
             </div>
-            <div class="button">
-                <a href="evolution_feminisme.html" class="aButton">Lire l'article</a>
+            <div class="card__btn button">
+                <a href="evolution_feminisme.html" class="button__link aButton">Lire l'article</a>
             </div>   
         </article>
 
 
-        <article>
-            <div class="art">
-                <h3>Mark Ruffalo, un homme féministe ?!</h3>
-                <img src="./public/img/Mark_ruffalo_nb.webp" alt="test">
-                <p>Quand on parle de féminisme, on peut se dire que seule une femme peut être féministe. Et pourtant non, Mark Ruffalo se dit féministe. De plus, le célèbre acteur du “titan vert” plus connu sous le nom de Hulk affiche régulièrement son côté féministe.</p>
+        <article class="card">
+            <div class="card__content art">
+                <h3 class="card__title">Mark Ruffalo, un homme féministe ?!</h3>
+                <img class="card__img" src="./public/img/Mark_ruffalo_nb.webp" alt="test">
+                <p class="card__txt">Quand on parle de féminisme, on peut se dire que seule une femme peut être féministe. Et pourtant non, Mark Ruffalo se dit féministe. De plus, le célèbre acteur du “titan vert” plus connu sous le nom de Hulk affiche régulièrement son côté féministe.</p>
             </div>
-            <div class="button">
-                <a href="mark_ruffalo.html" class="aButton">Lire l'article</a>
+            <div class="card__btn button">
+                <a href="mark_ruffalo.html" class="button__link aButton">Lire l'article</a>
             </div>
         </article>
     
     
-        <article>
-            <div class="art">
-                <h3>Le féminisme dans Sex education</h3>
-                <img src="./public/img/filles_bus_nb.webp" alt="test">
-                <p>Le féminisme est un sujet peu abordé dans les séries, encore moins pour une série visant un public jeune. Sex education arrive donc à parler de ce sujet sans passer par des subtilités.</p>
+        <article class="card">
+            <div class="card_content art">
+                <h3 class="card__title">Le féminisme dans Sex education</h3>
+                <img class="card__img" src="./public/img/filles_bus_nb.webp" alt="test">
+                <p class="card__txt">Le féminisme est un sujet peu abordé dans les séries, encore moins pour une série visant un public jeune. Sex education arrive donc à parler de ce sujet sans passer par des subtilités.</p>
             </div>
-            <div class="button">
-                <a href="sex_ed.html" class="aButton">Lire l'article</a>
+            <div class="card__btn button">
+                <a href="sex_ed.html" class="button__link aButton">Lire l'article</a>
             </div>
         </article>
         
@@ -79,40 +80,40 @@
         <header>
             <h2>Tetsskrjgbq</h2>
         </header>
-        <article>
-            <div class="art">
-                <h3>Vidéo micro-trottoir</h3>
-                <img src="./public/img/mic_trot.webp" alt="test">
-                <p>Dans le cadre d'un projet, un micro trottoir à été tourné afin de poser des questions sur le féminisme aux gens.</p>                
+        <article class="card">
+            <div class="card__content art">
+                <h3 class="card__title">Vidéo micro-trottoir</h3>
+                <img class="card__img" src="./public/img/mic_trot.webp" alt="test">
+                <p class="card__txt">Dans le cadre d'un projet, un micro trottoir à été tourné afin de poser des questions sur le féminisme aux gens.</p>                
             </div>
-            <div class="button">
-                <a href="video.html" class="aButton">Ouvrir la vidéo</a>
+            <div class="card__btn button">
+                <a href="video.html" class="button__link aButton">Ouvrir la vidéo</a>
             </div>
             
         </article>
-        <article>
-            <div class="art">
-                <h3>Les Autres projets sur le féminisme</h3>
-                <img src="./public/img/image_article.webp" alt="test">
-                <p>Dans le cadre d'un projet, les autres élèves de mmi 1 ont ainsi fait leurs sites. En voici une partie...</p>
+        <article class="card">
+            <div class="card__content art">
+                <h3 class="card__title">Les Autres projets sur le féminisme</h3>
+                <img class="card__img" src="./public/img/image_article.webp" alt="test">
+                <p class="card__txt">Dans le cadre d'un projet, les autres élèves de mmi 1 ont ainsi fait leurs sites. En voici une partie...</p>
             </div>
-            <div class="button">
-                <a href="autres_projets.html" class="aButton">Voir les autres projets</a>
+            <div class="card__btn button">
+                <a href="autres_projets.html" class="button__link aButton">Voir les autres projets</a>
             </div>
 
         </article>
     </section>
 
-    <footer>
-        <h2>F For Feminism</h2>
-        <h3>mentions légales</h3>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="#">MMi de Montbéliard</a></p>
-        <ul>
-            <li><span>Quentin</span></li>
-            <li><span>Heinis</span></li>
-            <li><span>Groupe B1</span></li>
+    <footer class="footer">
+        <h2 class="footer__title">F For Feminism</h2>
+        <h3 class="footer__mention">mentions légales</h3>
+        <p class="footer__txt">Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="footer__link" href="#">MMi de Montbéliard</a></p>
+        <ul class="footer__list name">
+            <li class="name__item"><span>Quentin</span></li>
+            <li class="name__item"><span>Heinis</span></li>
+            <li class="name__item"><span>Groupe B1</span></li>
         </ul>
-        <a href="mailto:delta.phsycose@gmail.com">delta.phsycose@gmail.com</a>
+        <a class="footer__link" href="mailto:delta.phsycose@gmail.com">delta.phsycose@gmail.com</a>
     </footer>
 </body>
 </html>
