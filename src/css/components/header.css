@@ -5,6 +5,7 @@ body > header {
     gap: 20px;
     width: 100%;
     height: 63px;
+
     
 }
 .MenuBtn{
@@ -41,3 +42,9 @@ nav{
     height: auto;
 }
 
+.header__end{
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    
+}
