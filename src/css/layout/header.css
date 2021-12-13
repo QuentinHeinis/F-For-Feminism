@@ -1,0 +1,93 @@
+.header {
+    background-color: rgb(27, 4, 22);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+.header__navBtn{
+    display: flex;
+    background: var(--c0);
+    border: transparent;
+    color: var(--c0);
+    height: 2px;
+    width: 32px;
+    border-radius: 1px;
+}
+
+
+
+
+nav{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--c0);
+    z-index: 4;
+}
+
+
+
+.lune{
+    display: flex;
+    width: 32px;
+    height: auto;
+}
+
+.header__end, .header__start{
+    display: flex;
+    gap: 23px;  
+    align-items: center;
+
+}
+
+.header__end{
+    margin-right: 11px;
+    margin-left: auto;
+    height: 100%;
+    width: 50%;
+    justify-content: right;
+}
+
+.header__start{
+    margin-left: 11px;
+    margin-right: auto;
+    height: 100%;
+    width: 40%;
+}
+
+.header__btn--langue{
+    text-decoration: none;
+    color: var(--c7);
+    padding: 3px 3px 3px 3px;
+    text-align: center;
+    display: flex;
+    width: 32px;
+    height: 24px;
+    clip-path: path("M0 1C0 0.447716 0.447715 0 1 0H30.447C31.1743 0 31.6583 0.751704 31.3574 1.4138L27.1881 10.5862C27.0686 10.8491 27.0686 11.1509 27.1881 11.4138L31.3574 20.5862C31.6583 21.2483 31.1743 22 30.447 22H1C0.447715 22 0 21.5523 0 21V1Z");
+    background: var(--c0);
+    border: none;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: var(--c7);
+    margin-left: 20px;
+
+}
+
+nav a::after{
+    content: '';
+    display: flex;
+    background-color: var(--c7);
+    height: 3px;
+    width: 300px;
+
+}

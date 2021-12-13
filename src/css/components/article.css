@@ -28,7 +28,7 @@ article{
     display: table;
     padding: 0;
     clip-path: path("M4 0.5H180.179C182.852 0.5 184.538 3.37587 183.233 5.70888L170.326 28.7792C169.888 29.5618 169.903 30.5189 170.365 31.2876L182.93 52.1973C184.332 54.53 182.651 57.5 179.93 57.5H4C2.067 57.5 0.5 55.933 0.5 54V4C0.5 2.067 2.067 0.5 4 0.5Z");
-    
+    z-index: 2;
 }
 
 .aButton {
@@ -36,7 +36,8 @@ article{
     vertical-align: middle;
     text-decoration: none;
     color: var(--c0);
-    float: middle;    
+    float: middle; 
+    z-index: 2;   
 }
 .aButton::before{
     content: "➔";
