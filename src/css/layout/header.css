@@ -5,31 +5,58 @@
     display: flex;
     flex-wrap: wrap;
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0; 
 }
 
 .header__navBtn{
     display: flex;
-    background: var(--c0);
-    border: transparent;
-    color: var(--c0);
-    height: 2px;
+    height: 32px;
     width: 32px;
-    border-radius: 1px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 
+.MenuBtn__bar::after{
+    content: '';
+    position: relative;
+    top: 8.5px;
+}
+
+.MenuBtn__bar::before{
+    content: '';
+    position: relative;
+    top: -9.5px;
+}
+
+.MenuBtn__bar::after, .MenuBtn__bar::before, .MenuBtn__bar{
+    font-size: 0;
+    display: block;
+    background: var(--c0);
+    color: var(--c0);
+    height: 2px;
+    width: 30px;
+    border: transparent;
+    border-radius: 1px;
+}
+
+.MenuBtn__bar{
+    border: none;
+}
 
 
 nav{
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--c0);
     z-index: 4;
+
 }
 
 
@@ -44,7 +71,7 @@ nav{
     display: flex;
     gap: 23px;  
     align-items: center;
-
+    
 }
 
 .header__end{
@@ -91,3 +118,4 @@ nav a::after{
     width: 300px;
 
 }
+

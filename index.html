@@ -20,9 +20,9 @@
                 <img src="./public/icones/lune_sombre.png" alt="logo mode sombre" class="lune">
             </a>
 
-            <button  class="header__navBtn MenuBtn" x-on:click="isOpen = !isOpen;">
-                <span></span>
-            </button>
+            <div  class="header__navBtn MenuBtn" x-on:click="isOpen = !isOpen;">
+                <div class="MenuBtn__bar"></div>
+            </div>
         </div>
         <nav x-show="isOpen" class="header__menu menu">
             <ul class="menu__list">
@@ -72,7 +72,7 @@
     
     
         <article class="card">
-            <div class="card_content art">
+            <div class="card__content art">
                 <h3 class="card__title">Le féminisme dans Sex education</h3>
                 <img class="card__img" src="./public/img/filles_bus_nb.webp" alt="test">
                 <p class="card__txt">Le féminisme est un sujet peu abordé dans les séries, encore moins pour une série visant un public jeune. Sex education arrive donc à parler de ce sujet sans passer par des subtilités.</p>
