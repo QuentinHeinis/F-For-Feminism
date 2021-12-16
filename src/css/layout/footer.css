@@ -2,7 +2,6 @@ footer {
     background-color: rgb(20,11,18);
     color: white;
     font-family: 'Mulish: 400px;';
-    text-transform: uppercase;
     font-size: var(--footer3);
     height: 488px;
     display: block;

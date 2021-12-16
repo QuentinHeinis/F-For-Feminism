@@ -76,4 +76,10 @@ section >header>h2::before{
 }
 
 
+.card__img{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+}
 
