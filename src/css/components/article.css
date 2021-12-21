@@ -23,6 +23,9 @@ article{
     border-bottom-left-radius: 1px 10px;
 }
 
+.card__content p {
+    font-size: var(--body);
+}
 
 .card__btn{
     appearance: none;
@@ -56,7 +59,7 @@ article{
 
 
 .articles h3{
-    font-size: 13px;
+    font-size: var(--header2);
     color: var(--c6);
     text-align: center;
 }
