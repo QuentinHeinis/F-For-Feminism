@@ -1,6 +1,5 @@
 article{
     width: 100%;
-    background-color: transparent;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 79.78px;
@@ -56,10 +55,10 @@ article{
 }
 
 
-section h3{
+.articles h3{
     font-size: 13px;
-    text-transform: uppercase;
     color: var(--c6);
+    text-align: center;
 }
 
 
@@ -116,4 +115,24 @@ section h3{
     transform: skewY(20deg) rotateY(0);
     transform-origin: left;
     border-radius: 0 10px 0 0;
+}
+
+
+.articles__title{
+    color: var(--c7);
+    font-size: .75rem;
+    font-weight: lighter;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.articles__title::before{
+    content: "";
+    width: 10px;
+    display: flex;
+    width: 20px;
+    height: 3px;
+    background-color: var(--c7);
+    align-self: center;
+    margin-right: 10px;
 }
