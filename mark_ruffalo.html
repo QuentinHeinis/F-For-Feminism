@@ -9,91 +9,112 @@
     <title>Mark Ruffalo, un homme féministe ?!</title>
 </head>
 <body>
-    <header x-data="{isOpen: false}">
-        <button class="langue"> EN </button>
-        <a href="#"><img src="./public/icones/lune2.png" alt="logo mode sombre" class="lune"></a>
-        <button  class="MenuBtn" x-on:click="isOpen = !isOpen;">
-            <span></span>
-        </button>
-        <nav x-show="isOpen">
-            <ul>
-                <li><a href="./index.html">F For Feminism</a></li>
-                <li><a href="/">Se renseigner sur le féminisme</a></li>
-                <li><a href="./video.html">Vidéo micro-trottoir</a></li>
-                <li><a href="./autres_projets.html">Voir les autres projets</a></li>
-                <li><a href="/">Nous Contacter</a></li>
+    <header x-data="{isOpen: false}" class="header">
+        <div class="header__start"><img class="header__logo logo" src="/public/icones/Logoclair.png" alt="Logo"></div>
+
+        <div class="header__end">
+            <a href="#" class="header__btn--langue langue">
+                EN
+            </a>
+            <a href="#">
+                <img src="./public/icones/lune_sombre.png" alt="logo mode sombre" class="lune">
+            </a>
+
+            <div  class="header__navBtn MenuBtn" x-on:click="isOpen = !isOpen;">
+                <div class="MenuBtn__bar"></div>
+            </div>
+        </div>
+        <nav x-show="isOpen" class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="./index.html">F For Feminism</a></li>
+                <li class="menu__item"><a href="/">Se renseigner sur le féminisme</a></li>
+                <li class="menu__item"><a href="./video.html">Vidéo micro-trottoir</a></li>
+                <li class="menu__item"><a href="./autres_projets.html">Voir les autres projets</a></li>
+                <li class="menu__item"><a href="./contact.html">Nous Contacter</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>Mark Ruffalo, un homme féministe ?!</h1>
-        <img src="/public/img/Mark_ruffalo.webp" alt="photo de Mark Ruffalo">
-        <p>Quand on parle de féminisme, on peut se dire que seule une femme peut être féministe. Et pourtant non, Mark Ruffalo se dit féministe. De plus, le célèbre acteur du “titan vert” plus connu sous le nom de Hulk affiche régulièrement son côté féministe.</p>
-    </section>
-
-    <section>
-        <h2>Un homme concerné par le féminisme</h2>
-        <p>En août 2013, l’acteur décide d’écrire une lettre sur le droit d’avortement qu’on les femmes aux États-Unis. Quand sa mère était jeune, l’avortement était encore illégal dans l’état où elle vivait. Elle est obligée d'avorter de manière illégale. On peut se dire que cela ne le regarde pas, ce n’est pas une femme. Mais l’acteur étant père de trois enfants dont deux filles, il est directement lié à cette cause. Il aimerait que ses filles puissent faire être libre de leurs choix sur leurs corps sans être dans l’illégalité. Il écrit donc : <q>Je suis un homme, je pourrais dire que cela ne me regarde absolument pas. Sauf que j’ai deux filles et que ma mère a été obligée de se faire avorter illégalement dans un État où l’avortement était interdit lorsqu’elle était jeune.</q></p>
-        <p>L’avortement est aujourd’hui et depuis 1973 autorisé dans tous les États considérant cela comme un droit à la vie privée et étant protégé pas le IVe amendement. Cependant, dans certains États, les femmes n’ont plus le droit d’avorter après 20 semaines sauf en cas de danger. Dans d’autres États, il est même très difficile de trouver cliniques pratiquant les <a href="/">IVG</a>. Entre 1992 et 2002, pas loin de 1000 établissements pratiquant l’avortement disparaissent et <strong>80% des établissements restants subissent des manifestations.</strong> Mark Ruffalo est donc inquiet pour les femmes pour qui la liberté de choisir ne devrait pas être optionnelle.</p>
-
-        <h2>Un féministe engagé</h2>
-
-        <p>Le célèbre acteur ne s’arrête pas juste à écrire une lettre sur les droits des femmes. Il va activement participer à des évènements ou bien prendre la parole en mettant son côté militant pour les femmes ou va se montrer proche de la communauté <a href="/">LGBT</a>. Il va à plusieurs reprise se dire féministe devant les médias, ou défendre des personnalités en mettant en avant leur côté féministe.</p>
-        <p>En 2015, lors d’une interview sur la sortie du film Avengers:l’ère d’ultron, l’acteur se voit répondre aux questions habituellement posées à Scarlett Johansson. Il va répondre à chacune de ces questions et laisser l’actrice de Black Widow répondre aux questions posées habituellement aux hommes. Cette interview met donc en avant l’évidence que de nombreuses questions sexistes sont posées habituellement aux femmes. </p>
-        <p>Mark Ruffalo va non seulement répondre à chacune des questions, mais il va aussi rendre ces questions banales et ennuyantes. Par exemple, quand on lui demande s’ il ressent une pression pour qu’il perde du poids pour son rôle dans le film il répond basiquement : <q> Non pas vraiment… Je n’aime pas trop aller à la salle de gym si je peux m’en empêcher. </q></p>
-        <p>En 2017, il va participer au milieu de millions de personnes à l’évènement marche des femmes ou women’s march en anglais. Un rassemblement politique se déroulant à Washington pour promouvoir les droits des femmes, les droits LGBT.</p>
-        
-        <h2>Mark Ruffalo, un homme féministe parmi d’autres</h2>
-        <p>S’il est maintenant évident que Mark Ruffalo est bel et bien un homme féministe. Il est tout aussi évident que ce n’est pas le seul féministe masculin. </p>
-
-        <div>
-            <img src="/public/img/daniel_raddcliff.webp" alt="Photo de Daniel Raddcliff">
-            <p>Daniel Radcliffe, la star de Harry Potter va lui s’indigner face <strong>au manque de femme à Hollywood </strong> ainsi qu’aux rôles féminins écrits par des hommes pour la plus part des cas.</p>
-        </div>
-        <div>
-            <p>Joseph Gordon Levitt se proclame féministe. Étant plus jeune, sa mère va leur donner, à son frère et lui, une éducation féministe. Elle leur montrait souvent une société dont <strong>la culture définissait la femme comme un objet.</strong></p>
-            <img src="/public/img/joseph_gordon_levitt.webp" alt="Photo de Joseph Gordon Levitt">
-        </div>
-        <div>
-            <img src="/public/img/Benedict_Cumberbatch.webp" alt="Photo de Benedict Cumberbatch">
-            <p>Benedict Cumberbatch prend position comme féministe en acceptant que <strong>des rôles où l’égalité salariale sera respectée.</strong></p>
-        </div>
-        <div>
-            <p>Daniel Craig s’est travesti en 2011 afin de<strong> dénoncer les inégalités entre hommes et femmes</strong> dans le monde du travail.</p>
-            <img src="/public/img/Daniel_Craig.webp" alt="Photo de Daniel Craig">
-        </div>
-    </section>
-    <section>
-        <header>
-            <h2>D'autres renseignements</h2>
-        </header>
-        <article>
-            <div class="art">
-                <h2>Le féminisme dans Sex education</h2>
-                <img src="./public/img/filles_bus_nb.webp" alt="test">
-                <p>Le féminisme est un sujet peu abordé dans les séries, encore moins pour une série visant un public jeune. Sex education arrive donc à parler de ce sujet sans passer par des subtilités.</p>
+    <main>
+        <section>
+            <h1>Mark Ruffalo, un homme féministe ?!</h1>
+            <img src="/public/img/Mark_ruffalo.webp" alt="photo de Mark Ruffalo">
+            <p>Quand on parle de féminisme, on peut se dire que seule une femme peut être féministe. Et pourtant non, Mark Ruffalo se dit féministe. De plus, le célèbre acteur du “titan vert” plus connu sous le nom de Hulk affiche régulièrement son côté féministe.</p>
+        </section>
+    
+        <section>
+            <h2>Un homme concerné par le féminisme</h2>
+            <p>En août 2013, l’acteur décide d’écrire une lettre sur le droit d’avortement qu’on les femmes aux États-Unis. Quand sa mère était jeune, l’avortement était encore illégal dans l’état où elle vivait. Elle est obligée d'avorter de manière illégale. On peut se dire que cela ne le regarde pas, ce n’est pas une femme. Mais l’acteur étant père de trois enfants dont deux filles, il est directement lié à cette cause. Il aimerait que ses filles puissent faire être libre de leurs choix sur leurs corps sans être dans l’illégalité. Il écrit donc : <q>Je suis un homme, je pourrais dire que cela ne me regarde absolument pas. Sauf que j’ai deux filles et que ma mère a été obligée de se faire avorter illégalement dans un État où l’avortement était interdit lorsqu’elle était jeune.</q></p>
+            <p>L’avortement est aujourd’hui et depuis 1973 autorisé dans tous les États considérant cela comme un droit à la vie privée et étant protégé pas le IVe amendement. Cependant, dans certains États, les femmes n’ont plus le droit d’avorter après 20 semaines sauf en cas de danger. Dans d’autres États, il est même très difficile de trouver cliniques pratiquant les <a href="/">IVG</a>. Entre 1992 et 2002, pas loin de 1000 établissements pratiquant l’avortement disparaissent et <strong>80% des établissements restants subissent des manifestations.</strong> Mark Ruffalo est donc inquiet pour les femmes pour qui la liberté de choisir ne devrait pas être optionnelle.</p>
+    
+            <h2>Un féministe engagé</h2>
+    
+            <p>Le célèbre acteur ne s’arrête pas juste à écrire une lettre sur les droits des femmes. Il va activement participer à des évènements ou bien prendre la parole en mettant son côté militant pour les femmes ou va se montrer proche de la communauté <a href="/">LGBT</a>. Il va à plusieurs reprise se dire féministe devant les médias, ou défendre des personnalités en mettant en avant leur côté féministe.</p>
+            <p>En 2015, lors d’une interview sur la sortie du film Avengers:l’ère d’ultron, l’acteur se voit répondre aux questions habituellement posées à Scarlett Johansson. Il va répondre à chacune de ces questions et laisser l’actrice de Black Widow répondre aux questions posées habituellement aux hommes. Cette interview met donc en avant l’évidence que de nombreuses questions sexistes sont posées habituellement aux femmes. </p>
+            <p>Mark Ruffalo va non seulement répondre à chacune des questions, mais il va aussi rendre ces questions banales et ennuyantes. Par exemple, quand on lui demande s’ il ressent une pression pour qu’il perde du poids pour son rôle dans le film il répond basiquement : <q> Non pas vraiment… Je n’aime pas trop aller à la salle de gym si je peux m’en empêcher. </q></p>
+            <p>En 2017, il va participer au milieu de millions de personnes à l’évènement marche des femmes ou women’s march en anglais. Un rassemblement politique se déroulant à Washington pour promouvoir les droits des femmes, les droits LGBT.</p>
+            
+            <h2>Mark Ruffalo, un homme féministe parmi d’autres</h2>
+            <p>S’il est maintenant évident que Mark Ruffalo est bel et bien un homme féministe. Il est tout aussi évident que ce n’est pas le seul féministe masculin. </p>
+    
+            <div>
+                <img src="/public/img/daniel_raddcliff.webp" alt="Photo de Daniel Raddcliff">
+                <p>Daniel Radcliffe, la star de Harry Potter va lui s’indigner face <strong>au manque de femme à Hollywood </strong> ainsi qu’aux rôles féminins écrits par des hommes pour la plus part des cas.</p>
             </div>
-            <div class="button">
-                <a href="sex_ed.html" class="aButton">Lire l'article</a>
+            <div>
+                <p>Joseph Gordon Levitt se proclame féministe. Étant plus jeune, sa mère va leur donner, à son frère et lui, une éducation féministe. Elle leur montrait souvent une société dont <strong>la culture définissait la femme comme un objet.</strong></p>
+                <img src="/public/img/joseph_gordon_levitt.webp" alt="Photo de Joseph Gordon Levitt">
             </div>
-        </article>
-        <article>
-            <div class="art">
-                <h2>L’évolution du féminisme dans le monde</h2>
-                <img src="./public/img/image_article_nb.webp" alt="test">
-                <p>Le féminisme à pour chaque pays une place plus ou moins importante. D’une partie à une autre du monde, le féminisme va être développé à une autre échelle. Cette échelle va varier en temps et en impact.</p>
+            <div>
+                <img src="/public/img/Benedict_Cumberbatch.webp" alt="Photo de Benedict Cumberbatch">
+                <p>Benedict Cumberbatch prend position comme féministe en acceptant que <strong>des rôles où l’égalité salariale sera respectée.</strong></p>
             </div>
-            <div class="button">
-                <a href="evolution_feminisme.html" class="aButton">Lire l'article</a>
-            </div>   
-        </article>
-    </section>
-    <footer>
-        <h2>F For Feminism</h2>
-        <h3>mentions légales</h3>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="#">MMi de Montbéliard</a></p>
-        <span>Quentin <br />HEINIS <br />Groupe B1</span>
-        <a href="mailto:delta.phsycose@gmail.com">delta.phsycose@gmail.com</a>
+            <div>
+                <p>Daniel Craig s’est travesti en 2011 afin de<strong> dénoncer les inégalités entre hommes et femmes</strong> dans le monde du travail.</p>
+                <img src="/public/img/Daniel_Craig.webp" alt="Photo de Daniel Craig">
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2>D'autres renseignements</h2>
+            </header>
+            <article>
+                <div class="art">
+                    <h2>Le féminisme dans Sex education</h2>
+                    <img src="./public/img/filles_bus_nb.webp" alt="test">
+                    <p>Le féminisme est un sujet peu abordé dans les séries, encore moins pour une série visant un public jeune. Sex education arrive donc à parler de ce sujet sans passer par des subtilités.</p>
+                </div>
+                <div class="button">
+                    <a href="sex_ed.html" class="aButton">Lire l'article</a>
+                </div>
+            </article>
+            <article>
+                <div class="art">
+                    <h2>L’évolution du féminisme dans le monde</h2>
+                    <img src="./public/img/image_article_nb.webp" alt="test">
+                    <p>Le féminisme à pour chaque pays une place plus ou moins importante. D’une partie à une autre du monde, le féminisme va être développé à une autre échelle. Cette échelle va varier en temps et en impact.</p>
+                </div>
+                <div class="button">
+                    <a href="evolution_feminisme.html" class="aButton">Lire l'article</a>
+                </div>   
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__title">F For Feminism</h2>
+        <h3 class="footer__mention">mentions légales</h3>
+        <p class="footer__txt">Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="footer__link" href="#">MMi de Montbéliard</a></p>
+        <ul class="footer__list name">
+            <li class="name__item"><span>Quentin</span></li>
+            <li class="name__item"><span>Heinis</span></li>
+            <li class="name__item"><span>Groupe B1</span></li>
+        </ul>
+        <a class="footer__link" href="mailto:delta.phsycose@gmail.com">delta.phsycose@gmail.com</a>
+        <div class="footer__social">
+            <a href="https://instagram.com/quentinheinis?utm_medium=copy_link"><img class="footer__icon" src="./public/icones/instagram.png" alt="instagram"></a>
+            <a href="https://discord.gg/YTuU8CGf9s"><img class="footer__icon" src="./public/icones/discord.png" alt="discord"></a>
+            <a href="https://www.youtube.com/channel/UCvghvCF6eR90rzE1f3P8d6g"><img class="footer__icon" src="./public/icones/youtube.png" alt="youtube"></a>
+            <a href="https://www.linkedin.com/in/quentin-heinis-731ab8223"><img class="footer__icon" src="./public/icones/linkedin.png" alt="linkedin"></a>
+        </div>
     </footer>
 </body>
 </html>

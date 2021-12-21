@@ -9,90 +9,111 @@
     <title>Le féminisme dans Sex education</title>
 </head>
 <body>
-    <header x-data="{isOpen: false}">
-        <button class="langue"> EN </button>
-        <a href="#"><img src="./public/icones/lune2.png" alt="logo mode sombre" class="lune"></a>
-        <button  class="MenuBtn" x-on:click="isOpen = !isOpen;">
-            <span></span>
-        </button>
-        <nav x-show="isOpen">
-            <ul>
-                <li><a href="./index.html">F For Feminism</a></li>
-                <li><a href="/">Se renseigner sur le féminisme</a></li>
-                <li><a href="./video.html">Vidéo micro-trottoir</a></li>
-                <li><a href="./autres_projets.html">Voir les autres projets</a></li>
-                <li><a href="/">Nous Contacter</a></li>
+    <header x-data="{isOpen: false}" class="header">
+        <div class="header__start"><img class="header__logo logo" src="/public/icones/Logoclair.png" alt="Logo"></div>
+
+        <div class="header__end">
+            <a href="#" class="header__btn--langue langue">
+                EN
+            </a>
+            <a href="#">
+                <img src="./public/icones/lune_sombre.png" alt="logo mode sombre" class="lune">
+            </a>
+
+            <div  class="header__navBtn MenuBtn" x-on:click="isOpen = !isOpen;">
+                <div class="MenuBtn__bar"></div>
+            </div>
+        </div>
+        <nav x-show="isOpen" class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="./index.html">F For Feminism</a></li>
+                <li class="menu__item"><a href="/">Se renseigner sur le féminisme</a></li>
+                <li class="menu__item"><a href="./video.html">Vidéo micro-trottoir</a></li>
+                <li class="menu__item"><a href="./autres_projets.html">Voir les autres projets</a></li>
+                <li class="menu__item"><a href="./contact.html">Nous Contacter</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>Le féminisme dans Sex education</h1>
-        <img src="/public/img/filles_bus.webp" alt="photo des filles de Sex Education dans un bus">
-        <p>Le féminisme est un sujet peu abordé dans les séries, encore moins pour une série visant un public jeune. Sex education arrive donc à parler de ce sujet sans passer par des subtilités.</p>
-    </section>
-
-    <section>
-        <h2>Sex education</h2>
-        <img src="/public/img/Sex_Education.webp" alt="Affiche de Sex education">
-        <p>Sex education est une série populaire parlant de plein de sujets qui ne sont pas forcément abordés habituellement en société. Passant par Meave avec un caractère fort, Ruby qui passe pour la chef d’une bande intouchable, ou Ola qui interprête le rôle de fille indépendante, les filles ont chacun une histoire propre et originale. Parmi elles, Aimee, une adolescente qui incarne la gentillesse. Cependant, elle se fait agresser sexuellement dans le bus dans le début de la deuxième saison. Étant dans une situation compliquée, elle n’a pas su comment réagir. Quand Meave, sa meilleure amie, la voit avec une tache sur son pantalon, elle demande inquiète ce qu’il se passe, Aimee lui explique, mais en incohérence avec le récit, elle raconte l’histoire comme si c’était normal, sans trouver cet acte anormal. C’est alors que Meave lui fait la réflexion, et l'incite à porter plainte. Après ça, Aimee est impossible de reprendre le bus en voyant le visage de son agresseur sur tous les passagers du bus. Elle se contraint donc à venir à pied tous les jours au lieu de prendre ce fameux bus. </p>
-
-        <h2>Points communs et instant <a href="/">#MeToo</a></h2>
-
-        <p>Peu après dans la série, plusieurs filles sont mises en retenue à cause de vulgarités écrites à propos d’une enseignante sur un miroir au rouge à lèvre. Personne ne voulant se dénoncer, elles ont eu plusieurs punitions tels que entourer tous les “a” sur un journal. Cependant, avant la fin, elles disent à l’enseignante que cela n’a aucun intérêt. L'enseignante leur fait donc trouver un point commun entre elles, des femmes pour préparer un exposé. Elles vont donc parler de tout et n’importe quoi, jeux de rôles, shopping ou même du chocolat, mais la tension monte entre Ola et Meave, ce qui rend Aimee encore plus mal car elle se sent pas mieux par rapport à cette histoire du bus, elle se met donc à pleurer car elle peut plus prendre le bus à cause de cette agression, toute les filles se réunissent autour d’elle pour la réconforter. Elle s’explique et raconte son point de vue sur la situation. C’est alors que les filles, dans un beau moment #MeToo vont les unes après les autres raconter une histoire de harcèlement, d’attouchement, d’exhibitions. C’est alors que Viv explique que “statistiquement, deux tiers des filles font l’expérience d’un contact sexuel non consenti dans les espaces publics avant l'âge de 21 ans”. Elles se mettent d’accord sur le fait que le pénis de l’homme est un objet de pouvoir. Elles sortent donc de retenue en disant à leur enseignante, que mise à part les “pénis non consensuels", elles n’avaient pas grand chose en commun. Mais l’on remarque la difficulté pour les filles et femmes de parler de ce genre d’actes.</p>
-        
-        <h2>Colère et le soulagement</h2>
-        <p>S’il est maintenant évident que Mark Ruffalo est bel et bien un homme féministe. Il est tout aussi évident que ce n’est pas le seul féministe masculin. </p>
-
-        <div>
-            <img src="/public/img/daniel_raddcliff.webp" alt="Photo de Daniel Raddcliff">
-            <p>Daniel Radcliffe, la star de Harry Potter va lui s’indigner face <strong>au manque de femme à Hollywood </strong> ainsi qu’aux rôles féminins écrits par des hommes pour la plus part des cas.</p>
-        </div>
-        <div>
-            <p>Joseph Gordon Levitt se proclame féministe. Étant plus jeune, sa mère va leur donner, à son frère et lui, une éducation féministe. Elle leur montrait souvent une société dont <strong>la culture définissait la femme comme un objet.</strong></p>
-            <img src="/public/img/joseph_gordon_levitt.webp" alt="Photo de Joseph Gordon Levitt">
-        </div>
-        <div>
-            <img src="/public/img/Benedict_Cumberbatch.webp" alt="Photo de Benedict Cumberbatch">
-            <p>Benedict Cumberbatch prend position comme féministe en acceptant que <strong>des rôles où l’égalité salariale sera respectée.</strong></p>
-        </div>
-        <div>
-            <p>Daniel Craig s’est travesti en 2011 afin de<strong> dénoncer les inégalités entre hommes et femmes</strong> dans le monde du travail.</p>
-            <img src="/public/img/Daniel_Craig.webp" alt="Photo de Daniel Craig">
-        </div>
-    </section>
-    <section>
-        <header><h2>D'autres renseignements</h2></header>
-        <article>
-            <div class="art">
-                <h2>Le féminisme dans Sex education</h2>
-                <img src="./public/img/filles_bus_nb.webp" alt="test">
-                <p>Le féminisme est un sujet peu abordé dans les séries, encore moins pour une série visant un public jeune. Sex education arrive donc à parler de ce sujet sans passer par des subtilités.</p>
-            </div>
-            <div class="button">
-                <a href="sex_ed.html" class="aButton">Lire l'article</a>
-            </div>
-        </article>
-        <article>
-            <div class="art">
-                <h2>L’évolution du féminisme dans le monde</h2>
-                <img src="./public/img/image_article_nb.webp" alt="test">
-                <p>Le féminisme à pour chaque pays une place plus ou moins importante. D’une partie à une autre du monde, le féminisme va être développé à une autre échelle. Cette échelle va varier en temps et en impact.</p>
-            </div>
-            <div class="button">
-                <a href="evolution_feminisme.html" class="aButton">Lire l'article</a>
-            </div>
+    <main>
+        <section>
+            <h1>Le féminisme dans Sex education</h1>
+            <img src="/public/img/filles_bus.webp" alt="photo des filles de Sex Education dans un bus">
+            <p>Le féminisme est un sujet peu abordé dans les séries, encore moins pour une série visant un public jeune. Sex education arrive donc à parler de ce sujet sans passer par des subtilités.</p>
+        </section>
+    
+        <section>
+            <h2>Sex education</h2>
+            <img src="/public/img/Sex_Education.webp" alt="Affiche de Sex education">
+            <p>Sex education est une série populaire parlant de plein de sujets qui ne sont pas forcément abordés habituellement en société. Passant par Meave avec un caractère fort, Ruby qui passe pour la chef d’une bande intouchable, ou Ola qui interprête le rôle de fille indépendante, les filles ont chacun une histoire propre et originale. Parmi elles, Aimee, une adolescente qui incarne la gentillesse. Cependant, elle se fait agresser sexuellement dans le bus dans le début de la deuxième saison. Étant dans une situation compliquée, elle n’a pas su comment réagir. Quand Meave, sa meilleure amie, la voit avec une tache sur son pantalon, elle demande inquiète ce qu’il se passe, Aimee lui explique, mais en incohérence avec le récit, elle raconte l’histoire comme si c’était normal, sans trouver cet acte anormal. C’est alors que Meave lui fait la réflexion, et l'incite à porter plainte. Après ça, Aimee est impossible de reprendre le bus en voyant le visage de son agresseur sur tous les passagers du bus. Elle se contraint donc à venir à pied tous les jours au lieu de prendre ce fameux bus. </p>
+    
+            <h2>Points communs et instant <a href="/">#MeToo</a></h2>
+    
+            <p>Peu après dans la série, plusieurs filles sont mises en retenue à cause de vulgarités écrites à propos d’une enseignante sur un miroir au rouge à lèvre. Personne ne voulant se dénoncer, elles ont eu plusieurs punitions tels que entourer tous les “a” sur un journal. Cependant, avant la fin, elles disent à l’enseignante que cela n’a aucun intérêt. L'enseignante leur fait donc trouver un point commun entre elles, des femmes pour préparer un exposé. Elles vont donc parler de tout et n’importe quoi, jeux de rôles, shopping ou même du chocolat, mais la tension monte entre Ola et Meave, ce qui rend Aimee encore plus mal car elle se sent pas mieux par rapport à cette histoire du bus, elle se met donc à pleurer car elle peut plus prendre le bus à cause de cette agression, toute les filles se réunissent autour d’elle pour la réconforter. Elle s’explique et raconte son point de vue sur la situation. C’est alors que les filles, dans un beau moment #MeToo vont les unes après les autres raconter une histoire de harcèlement, d’attouchement, d’exhibitions. C’est alors que Viv explique que “statistiquement, deux tiers des filles font l’expérience d’un contact sexuel non consenti dans les espaces publics avant l'âge de 21 ans”. Elles se mettent d’accord sur le fait que le pénis de l’homme est un objet de pouvoir. Elles sortent donc de retenue en disant à leur enseignante, que mise à part les “pénis non consensuels", elles n’avaient pas grand chose en commun. Mais l’on remarque la difficulté pour les filles et femmes de parler de ce genre d’actes.</p>
             
-            
-            
-            
-        </article>
-    </section>
-    <footer>
-        <h2>F For Feminism</h2>
-        <h3>mentions légales</h3>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="#">MMi de Montbéliard</a></p>
-        <span>Quentin <br />HEINIS <br />Groupe B1</span>
-        <a href="mailto:delta.phsycose@gmail.com">delta.phsycose@gmail.com</a>
+            <h2>Colère et le soulagement</h2>
+            <p>S’il est maintenant évident que Mark Ruffalo est bel et bien un homme féministe. Il est tout aussi évident que ce n’est pas le seul féministe masculin. </p>
+    
+            <div>
+                <img src="/public/img/daniel_raddcliff.webp" alt="Photo de Daniel Raddcliff">
+                <p>Daniel Radcliffe, la star de Harry Potter va lui s’indigner face <strong>au manque de femme à Hollywood </strong> ainsi qu’aux rôles féminins écrits par des hommes pour la plus part des cas.</p>
+            </div>
+            <div>
+                <p>Joseph Gordon Levitt se proclame féministe. Étant plus jeune, sa mère va leur donner, à son frère et lui, une éducation féministe. Elle leur montrait souvent une société dont <strong>la culture définissait la femme comme un objet.</strong></p>
+                <img src="/public/img/joseph_gordon_levitt.webp" alt="Photo de Joseph Gordon Levitt">
+            </div>
+            <div>
+                <img src="/public/img/Benedict_Cumberbatch.webp" alt="Photo de Benedict Cumberbatch">
+                <p>Benedict Cumberbatch prend position comme féministe en acceptant que <strong>des rôles où l’égalité salariale sera respectée.</strong></p>
+            </div>
+            <div>
+                <p>Daniel Craig s’est travesti en 2011 afin de<strong> dénoncer les inégalités entre hommes et femmes</strong> dans le monde du travail.</p>
+                <img src="/public/img/Daniel_Craig.webp" alt="Photo de Daniel Craig">
+            </div>
+        </section>
+        <section>
+            <header><h2>D'autres renseignements</h2></header>
+            <article>
+                <div class="art">
+                    <h2>Le féminisme dans Sex education</h2>
+                    <img src="./public/img/filles_bus_nb.webp" alt="test">
+                    <p>Le féminisme est un sujet peu abordé dans les séries, encore moins pour une série visant un public jeune. Sex education arrive donc à parler de ce sujet sans passer par des subtilités.</p>
+                </div>
+                <div class="button">
+                    <a href="sex_ed.html" class="aButton">Lire l'article</a>
+                </div>
+            </article>
+            <article>
+                <div class="art">
+                    <h2>L’évolution du féminisme dans le monde</h2>
+                    <img src="./public/img/image_article_nb.webp" alt="test">
+                    <p>Le féminisme à pour chaque pays une place plus ou moins importante. D’une partie à une autre du monde, le féminisme va être développé à une autre échelle. Cette échelle va varier en temps et en impact.</p>
+                </div>
+                <div class="button">
+                    <a href="evolution_feminisme.html" class="aButton">Lire l'article</a>
+                </div>
+                
+                
+                
+                
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__title">F For Feminism</h2>
+        <h3 class="footer__mention">mentions légales</h3>
+        <p class="footer__txt">Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="footer__link" href="#">MMi de Montbéliard</a></p>
+        <ul class="footer__list name">
+            <li class="name__item"><span>Quentin</span></li>
+            <li class="name__item"><span>Heinis</span></li>
+            <li class="name__item"><span>Groupe B1</span></li>
+        </ul>
+        <a class="footer__link" href="mailto:delta.phsycose@gmail.com">delta.phsycose@gmail.com</a>
+        <div class="footer__social">
+            <a href="https://instagram.com/quentinheinis?utm_medium=copy_link"><img class="footer__icon" src="./public/icones/instagram.png" alt="instagram"></a>
+            <a href="https://discord.gg/YTuU8CGf9s"><img class="footer__icon" src="./public/icones/discord.png" alt="discord"></a>
+            <a href="https://www.youtube.com/channel/UCvghvCF6eR90rzE1f3P8d6g"><img class="footer__icon" src="./public/icones/youtube.png" alt="youtube"></a>
+            <a href="https://www.linkedin.com/in/quentin-heinis-731ab8223"><img class="footer__icon" src="./public/icones/linkedin.png" alt="linkedin"></a>
+        </div>
     </footer>
 </body>
 </html>
