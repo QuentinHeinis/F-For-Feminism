@@ -19,7 +19,9 @@ article{
     background-color: var(--fondArtC);
     margin-left: auto;
     margin-right: auto;
-    padding: 15px 13.5px 40px 13.5px;   
+    padding: 15px 13.5px 40px 13.5px;  
+    border-top-right-radius: 1px 10px; 
+    border-bottom-left-radius: 1px 10px;
 }
 
 
