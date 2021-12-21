@@ -44,14 +44,14 @@ article{
     
 }
 
-.aButton {
+.button__link {
     display: table-cell;
     vertical-align: middle;
     text-decoration: none;
     color: var(--c0);
     float: middle;    
 }
-.aButton::before{
+.button__link::before{
     content: "➔";
     font-size: 20px;
     vertical-align: middle;  
