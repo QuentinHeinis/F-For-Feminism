@@ -1,0 +1,33 @@
+.article__txt{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.article__title{
+    color: var(--c7);
+    font-size: .75rem;
+    font-weight: bold;
+    display: flex;
+    text-transform: uppercase;
+
+}
+
+.article__title::before{
+    content: "";
+    width: 2px;
+    display: flex;
+    width: 35px;
+    height: 3px;
+    background-color: var(--c4);
+    align-self: center;
+    margin-right: 5px;
+    
+}
+
+.article__img{
+    width: min(60%, 375px);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
