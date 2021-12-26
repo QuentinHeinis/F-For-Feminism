@@ -10,10 +10,13 @@
 .hero__title{
     font-size: var(--header1);
     font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .hero__img{
-    width: min(60%, 375px);
+    width: min(75%, 375px);
     height: auto;
     display: flex;
 }
