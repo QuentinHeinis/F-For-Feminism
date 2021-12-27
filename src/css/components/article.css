@@ -48,3 +48,15 @@
     width: 30vw;
     margin-right: 5px;
 }
+
+.article__img--right{
+    width: 30vw;
+    margin-left: 5px;
+    margin-right: 20px;
+    float: right;
+}
+
+
+.article__adef{
+    text-decoration: underline;
+}
