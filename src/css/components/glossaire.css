@@ -1,0 +1,29 @@
+.glossaire__title{
+    color: var(--c7);
+    font-size: .75rem;
+    font-weight: lighter;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.glossaire__title::before{
+    content: "";
+    width: 10px;
+    display: flex;
+    width: 20px;
+    height: 3px;
+    background-color: var(--c7);
+    align-self: center;
+    margin-right: 10px;
+}
+
+.glossaire__def{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.glossaire__adef{
+    text-decoration: underline;
+    color: var(--c5);
+    font-weight: bold;
+}
