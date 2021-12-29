@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  x-data="{isOpen: false}" :class="isOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/style.css">
-    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js" defer></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <title>Le féminisme dans Sex education</title>
 </head>
 <body>
-    <header x-data="{isOpen: false}" class="header">
+    <header class="header">
         <div class="header__start"><img class="header__logo logo" src="/public/icones/Logoclair.png" alt="Logo"></div>
 
         <div class="header__end">
@@ -20,17 +20,20 @@
                 <img src="./public/icones/lune_sombre.png" alt="logo mode sombre" class="lune">
             </a>
 
-            <div  class="header__navBtn MenuBtn" x-on:click="isOpen = !isOpen;">
+            <div  class="header__navBtn MenuBtn" @pointerdown="isOpen = !isOpen;"
+            :class=" isOpen && 'MenuBtn--open'">
                 <div class="MenuBtn__bar"></div>
             </div>
         </div>
-        <nav x-show="isOpen" class="header__menu menu">
+        <nav class="header__menu menu" :class="isOpen && 'menu--open'">
             <ul class="menu__list">
-                <li class="menu__item"><a href="./index.html">F For Feminism</a></li>
-                <li class="menu__item"><a href="/">Se renseigner sur le féminisme</a></li>
-                <li class="menu__item"><a href="./video.html">Vidéo micro-trottoir</a></li>
-                <li class="menu__item"><a href="./autres_projets.html">Voir les autres projets</a></li>
-                <li class="menu__item"><a href="./contact.html">Nous Contacter</a></li>
+                <li class="menu__item"><a class="menu__link" href="./index.html">F For Feminism</a></li>
+                <li class="menu__item"><a class="menu__link" href="./evolution_feminisme.html">L’évolution du féminisme dans le monde</a></li> 
+                <li class="menu__item"><a class="menu__link" href="./mark_ruffalo.html">Mark Ruffalo, un homme féministe ?!</a></li>
+                <li class="menu__item"><a class="menu__link" href="./sex_ed.html">Le féminisme dans Sex education</a></li>
+                <li class="menu__item"><a class="menu__link" href="./video.html">Vidéo micro-trottoir</a></li>
+                <li class="menu__item"><a class="menu__link" href="./autres_projets.html">Voir les autres projets</a></li>
+                <li class="menu__item"><a class="menu__link" href="./contact.html">Nous Contacter</a></li>
             </ul>
         </nav>
     </header>
