@@ -45,7 +45,7 @@
 }
 
 .article__img--galerie{
-    width: 30vw;
+    width: min(30vw, 130px);
     margin-right: 5px;
 }
 
