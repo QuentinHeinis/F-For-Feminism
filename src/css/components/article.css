@@ -10,7 +10,7 @@
     font-weight: bold;
     display: flex;
     text-transform: uppercase;
-
+    margin-right: 15px;
 }
 
 .article__title::before{
