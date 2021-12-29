@@ -48,16 +48,6 @@
 }
 
 
-nav{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--c0);
-    z-index: 4;
-
-}
 
 
 
@@ -103,19 +93,5 @@ nav{
 }
 
 
-nav a{
-    text-decoration: none;
-    color: var(--c7);
-    margin-left: 20px;
 
-}
-
-nav a::after{
-    content: '';
-    display: flex;
-    background-color: var(--c7);
-    height: 3px;
-    width: 300px;
-
-}
 
