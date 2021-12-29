@@ -49,12 +49,18 @@
     content: '';
     position: absolute;
     top: 10px;
+    width: 33%;
 }
 
 .MenuBtn__bar::before{
     content: '';
     position: absolute;
     top: -10px;
+    width: 66%;
+}
+.MenuBtn__bar{
+    position: relative;
+    width: 100%;
 }
 
 .MenuBtn__bar::after, .MenuBtn__bar::before, .MenuBtn__bar{
@@ -62,21 +68,19 @@
     background: var(--c0);
     color: var(--c0);
     height: 2px;
-    width: 100%;
     border-radius: 1px;
     z-index: 16;
     transition: all .8s ease;
 }
 
-.MenuBtn__bar{
-    position: relative;
-}
+
 
 /* button menu open */
 .MenuBtn--open .MenuBtn__bar,
 .MenuBtn--open .MenuBtn__bar::before,
 .MenuBtn--open .MenuBtn__bar::after {
   background-color: var(--c7);
+  width: 100%; 
   transform: rotate(135deg);
 }
 
