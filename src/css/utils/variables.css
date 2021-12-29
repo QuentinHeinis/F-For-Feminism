@@ -13,6 +13,8 @@
 --fond-texte-clair: rgba(241, 199, 188, 0.71);
 --shadowArtC: rgba(201, 189, 161, 1);
 --fondArtC: rgba(222, 203, 160, 1);
+--black: rgba(0, 0, 0, 1);
+--white: rgba(255, 255, 255, 1);
 
 /* Text-size styles */
 /* base size: body (16px) */
