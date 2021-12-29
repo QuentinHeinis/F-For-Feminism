@@ -23,13 +23,13 @@
 .MenuBtn__bar::after{
     content: '';
     position: relative;
-    top: 8.5px;
+    top: 10px;
 }
 
 .MenuBtn__bar::before{
     content: '';
     position: relative;
-    top: -9.5px;
+    top: -10px;
 }
 
 .MenuBtn__bar::after, .MenuBtn__bar::before, .MenuBtn__bar{
