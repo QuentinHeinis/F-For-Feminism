@@ -1,4 +1,4 @@
-article{
+article.card{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +51,7 @@ article{
     color: var(--c0);
     float: middle;    
 }
-.button__link::before{
+.button__link::before, .button--site__link::before{
     content: "➔";
     font-size: 20px;
     vertical-align: middle;  
@@ -138,4 +138,79 @@ article{
     background-color: var(--c7);
     align-self: center;
     margin-right: 10px;
+}
+
+
+/* Tweet autres sites */
+
+.card--site{
+    position: relative;
+    width: 100vw;
+    margin-bottom: 50px;
+}
+.card--site__design{
+    position: absolute;
+    width: 18.9%;
+    height: 100%;
+    background-color: var(--c1);
+    left: 0;
+    top: 20px;
+    z-index: -15;
+}
+
+.card--site__design::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    left: 50%;
+    z-index: -10;
+    background-color: var(--shadowArtC);
+    transform: skewY(20deg) rotateY(0);
+    transform-origin: right;
+    border-radius: 0 0 0 10px;
+}
+
+.card--site__btn{
+    position: absolute;
+    display: flex;
+    right: 20px;
+    bottom: -30px;
+    width: 111px;
+    height: 38px;
+    background-color: var(--c6);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.button--site__link{
+    color: var(--c0);
+    text-decoration: none;
+}
+
+.card--site__content{
+    width: 90.55%;
+    background-color: var(--fondArtC);
+    margin-left: auto;
+    margin-right: 0;
+    height: 100%; 
+    border-top-right-radius: 1px 10px; 
+    border-bottom-left-radius: 1px 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.card--site__from{
+    position: relative;
+    margin: 0;
+    padding-left: 10%;
+}
+
+.card--site__title{
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
