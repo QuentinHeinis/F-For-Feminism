@@ -1,0 +1,36 @@
+.form{
+    position: relative;
+    left: 5.3vw;
+    right: 5.3vw;
+    margin-bottom: 27px;
+    margin-top: 27px;
+}
+
+.form__name input, .form__mail input, .form__msg textarea{
+    width: min(80vw, 375px);
+    text-align: start;
+}
+
+.form label{
+    width: 100vw;
+    display: block;
+}
+
+
+.form__name, .form__mail, .form__msg, .form__btn{
+    margin-top: 10px;
+}
+
+
+
+.form__msg__area{
+    height: 234px;
+}
+
+.form__btn input{
+    width: 111px;
+    height: 34px;
+    border-radius: 20px;
+    background-color: white;
+    border-color: black;
+}
