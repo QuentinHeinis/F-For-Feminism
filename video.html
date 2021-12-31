@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en"  x-data="{isOpen: false}" :class="isOpen && 'noscroll'">
+<html lang="fr"  x-data="{isOpen: false, darkmode: $persist(false)}" :class="isOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/@alpinejs/persist@3.4.2/dist/cdn.min.js"></script>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <title>Vidéo micro-trottoir</title>
 </head>
-<body>
+<body :class="darkmode && 'body--dark'">
     <header class="header">
-        <div class="header__start"><img class="header__logo logo" src="/public/icones/Logoclair.png" alt="Logo"></div>
+        <div class="header__start">
+            <img class="header__logo logo" src="/public/icones/Logoclair.png" alt="Logo">
+            <img class="header__logo logo--dark" src="/public/icones/Logofoncé.png" alt="Logo" >
+        </div>
 
         <div class="header__end">
-            <a href="#" class="header__btn--langue langue">
+            <a href="#" class="header__btn--langue langue" >
                 EN
             </a>
-            <a href="#">
-                <img src="./public/icones/lune_sombre.png" alt="logo mode sombre" class="lune">
-            </a>
+            <img src="./public/icones/lune_sombre.png" alt="logo mode sombre" class="lune" @pointerdown="darkmode = !darkmode">
+            <img src="./public/icones/soleil_clair.png" alt="logo mode sombre" class="soleil" @pointerdown="darkmode = !darkmode" >
+           
 
             <div  class="header__navBtn MenuBtn" @pointerdown="isOpen = !isOpen;"
             :class=" isOpen && 'MenuBtn--open'">
