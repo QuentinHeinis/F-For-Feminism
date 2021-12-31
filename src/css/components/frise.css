@@ -27,7 +27,7 @@
 }
 
 .frise__date__txt{
-    color: var(--white);
+    color: var(--c0);
     position: absolute;
     width: 18.93vw;
     height: 18.93vw;
@@ -170,5 +170,27 @@
     top: calc(100% + 16vw);
     right: 6.89%;
     left: auto;
+    background-color: transparent;
+}
+
+
+
+/* dark mode */
+
+.body--dark .frise__date{
+    background-color: var(--c1);
+}
+
+.body--dark .frise__date::after, .body--dark .frise__content::after, .body--dark .frise__content::before, .body--dark .frise__date--droite::after, .body--dark .frise__content--gauche::before,.body--dark .frise__content--gauche::after{
+    background-color: var(--c1);
+}
+
+.body--dark .frise__date__txt{
+    color: var(--c7);
+    background-color: var(--c0);
+}
+
+.body--dark .frise__content--gauche:last-child::after{
+    border-color: var(--c1) transparent transparent transparent;
     background-color: transparent;
 }

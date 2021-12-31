@@ -60,3 +60,10 @@
 .article__adef{
     text-decoration: underline;
 }
+
+
+/* dark mode */
+
+.body--dark .article__title{
+    color: var(--c1);
+}
