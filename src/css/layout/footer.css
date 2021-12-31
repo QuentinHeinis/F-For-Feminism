@@ -65,3 +65,9 @@ ul{
     height: 32px;
     width: auto;
 }
+
+/* dark mode */
+
+.body--dark footer {
+    background-color: rgb(48, 34, 45);
+}
