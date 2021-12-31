@@ -30,18 +30,10 @@
 
 
 .menu__link {
-    color: var(--gray-white);
     text-decoration: none;
+    color: var(--c6);
 }
 
-.menu__link::after{
-    content: '';
-    position: relative;
-    display:inline;
-    width: 10px;
-    height: 30px;
-    background-color: red;
-}
 
 
 /*button*/
@@ -66,7 +58,6 @@
 .MenuBtn__bar::after, .MenuBtn__bar::before, .MenuBtn__bar{
     font-size: 0;
     background: var(--c0);
-    color: var(--c0);
     height: 2px;
     border-radius: 1px;
     z-index: 16;
@@ -88,4 +79,26 @@
 .MenuBtn--open .MenuBtn__bar::after {
     transform: rotate(90deg);
     top: 0;
+}
+
+
+
+/* dark mode*/
+
+.body--dark .MenuBtn__bar::after, .body--dark .MenuBtn__bar::before, .body--dark .MenuBtn__bar{
+    background: var(--c7); 
+}
+
+.body--dark .MenuBtn--open .MenuBtn__bar,
+.body--dark .MenuBtn--open .MenuBtn__bar::before,
+.body--dark .MenuBtn--open .MenuBtn__bar::after {
+  background-color: var(--c0);
+}
+
+.body--dark .menu{
+    background-color: var(--c6);
+}
+
+.body--dark .menu .menu__link{
+    color: var(--c1);
 }

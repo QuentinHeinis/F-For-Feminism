@@ -36,3 +36,9 @@
     margin-top: 27px;
     margin-bottom: 27px;
 }
+
+/* dark mode */
+
+.body--dark .hero::after{
+    background-color: var(--c0);
+}

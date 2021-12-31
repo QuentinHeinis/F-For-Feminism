@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(27, 4, 22);
+    background-color: var(--c7);
     height: 60px;
     width: 100%;
     display: flex;
@@ -32,6 +32,14 @@
     display: flex;
     width: 32px;
     height: auto;
+    position: relative;
+}
+
+.soleil{
+    display: none;
+    position: relative;
+    width: 32px;
+    height: auto;
 }
 
 .header__end, .header__start{
@@ -47,6 +55,8 @@
     height: 100%;
     width: 50%;
     justify-content: right;
+    display: flex;
+    position: relative;
 }
 
 .header__start{
@@ -54,10 +64,12 @@
     margin-right: auto;
     height: 100%;
     width: 40%;
+    position: relative;
 }
 
 .header__btn--langue{
     text-decoration: none;
+    position: relative;
     color: var(--c7);
     padding: 3px 3px 3px 3px;
     text-align: center;
@@ -69,6 +81,44 @@
     border: none;
 }
 
+.logo{
+    height: 32px;
+    width: auto;
+    position: absolute;
+    left: 0;
+}
+
+.logo--dark{
+    height: 32px;
+    width: auto;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+}
 
 
+/* header dark */
+.body--dark .header{
+    background-color: var(--c0);
+}
 
+.body--dark .header__btn--langue{
+    color: var(--c0);
+    background: var(--c7);
+}
+
+.body--dark .logo{
+    visibility: hidden;
+}
+
+.body--dark .logo--dark{
+    visibility: visible;
+}
+
+.body--dark .lune{
+    display: none;
+}
+
+.body--dark .soleil{
+    display: flex;
+}

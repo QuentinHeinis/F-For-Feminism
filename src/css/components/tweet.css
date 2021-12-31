@@ -214,3 +214,61 @@ article.card{
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
+
+/* dark mode tweet */
+
+.body--dark .card__content{
+    background-color: var(--fondArtF);
+}
+
+.body--dark .card__btn{
+    background-color: var(--c1);
+}
+
+.body--dark .button__link{
+    color: var(--c7);
+}
+
+.body--dark .articles h3{
+    color: var(--c1);
+}
+
+
+.body--dark .card__designLeft, .body--dark .card__designRight{
+    background-color: var(--c6);
+}
+
+
+.body--dark .card__designLeft::before, .body--dark .card__designRight::before{
+    background-color: var(--shadowArtF);
+}
+
+
+
+.body--dark .articles__title{
+    color: var(--c0)
+}
+.body--dark .articles__title::before{
+    background-color: var(--c0);
+}
+
+/* dark mode tweet--site */
+.body--dark .card--site__design{
+    background-color: var(--c6);
+}
+.body--dark .card--site__design::before{
+    background-color: var(--shadowArtF);
+}
+
+
+.body--dark .card--site__btn{
+    background-color: var(--c1);
+}
+
+.body--dark .button--site__link{
+    color: var(--c7);
+}
+.body--dark .card--site__content{
+    background-color: var(--fondArtF);
+}

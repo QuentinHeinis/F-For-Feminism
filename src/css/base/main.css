@@ -7,7 +7,7 @@
 body {
     background-color: var(--c0);
     color: var(--c7);
-    font-family: 'liberation_sansregular';
+    font-family: 'liberation_sansregular', sans-serif;
 }
 
 strong,
@@ -33,4 +33,15 @@ section a{
 .noscroll,
 .noscroll body {
   overflow: hidden;
+}
+
+/* dark mode */
+
+.body--dark{
+  background-color: var(--c7);
+  color: var(--c0);
+}
+
+.body--dark section a{
+  color: var(--c0);
 }
