@@ -40,14 +40,16 @@
 }
 
 .menu::before{
-    content: url(/public/icones/Logoclair.png);
+    content: '';
+    background-image: url(/public/icones/Logoclair.png);
+    background-size:contain ;
     position: absolute;
     display: flex;
     height: 115vw;
+    width: 115vw;
     z-index: 15;
     opacity: .5;
     left: -20px;
-    right: 0;
 }
 
 
@@ -120,6 +122,6 @@
 }
 
 .body--dark .menu::before{
-    content: url(/public/icones/Logofoncé.png);
+    background-image: url(/public/icones/Logofoncé.png);
     opacity: .2;
 }
