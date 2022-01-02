@@ -34,6 +34,22 @@
     color: var(--c6);
 }
 
+.menu__list{
+    position: relative;
+    z-index: 16   ;
+}
+
+.menu::before{
+    content: url(/public/icones/Logoclair.png);
+    position: absolute;
+    display: flex;
+    height: 115vw;
+    z-index: 15;
+    opacity: .5;
+    left: -20px;
+    right: 0;
+}
+
 
 
 /*button*/
@@ -101,4 +117,9 @@
 
 .body--dark .menu .menu__link{
     color: var(--c1);
+}
+
+.body--dark .menu::before{
+    content: url(/public/icones/Logofoncé.png);
+    opacity: .2;
 }
