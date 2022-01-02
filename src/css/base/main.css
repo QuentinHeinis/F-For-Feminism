@@ -45,3 +45,8 @@ section a{
 .body--dark section a{
   color: var(--c0);
 }
+
+.body--dark strong, .body--dark
+q{
+    color: var(--c4);
+}

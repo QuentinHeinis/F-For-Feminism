@@ -19,7 +19,7 @@
     display: flex;
     width: 35px;
     height: 3px;
-    background-color: var(--c4);
+    background-color: var(--c3);
     align-self: center;
     margin-right: 5px;
     
@@ -66,4 +66,8 @@
 
 .body--dark .article__title{
     color: var(--c1);
+}
+
+.body--dark .article__title::before{
+    background-color: var(--c5);
 }
