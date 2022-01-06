@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"  x-data="{isOpen: false, darkmode: $persist(false)}" :class="isOpen && 'noscroll'">
+<html lang="en"  x-data="{isOpen: false, darkmode: $persist(false)}" :class="isOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/@alpinejs/persist@3.4.2/dist/cdn.min.js"></script>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <title>Frise chronologique</title>
+    <title>Timeline</title>
 </head>
 <body :class="darkmode && 'body--dark'">
     <header class="header header--frise">
@@ -23,7 +23,7 @@
             <img src="./public/icones/lune_sombre.png" alt="logo mode sombre" class="lune" @pointerdown="darkmode = !darkmode">
             <img src="./public/icones/soleil_clair.png" alt="logo mode sombre" class="soleil" @pointerdown="darkmode = !darkmode" >
            
-            <a href="./evolution_feminisme.html#frise">
+            <a href="./ENevolution_feminisme.html#frise">
                 <div  class="header__navBtn MenuBtn MenuBtn--open">
                     <div class="MenuBtn__bar"></div>
                 </div>
@@ -32,8 +32,8 @@
     </header>
     <main>
         <section class="hero">
-            <h1 class="hero__title">Frise chronologique</h1>
-            <p class="hero__dspt">Une frise chronologique depuis les années 1940 jusqu’à nos jours listant une partie des évènements en rapport avec la femme dans les trois pays cité dans l’article précédemment.</p>
+            <h1 class="hero__title">Timeline</h1>
+            <p class="hero__dspt">A timeline from the 1940s to the present day listing some of the events related to women in the three countries cited in the previous article.</p>
         </section>
         <div class="frise">
             <div class="frise__date">
@@ -42,7 +42,7 @@
                 <div class="frise__content">
                     <div class="frise__part">
                         <img class="frise__flag__gauche" src="./public/icones/flag_japon.png" alt="">
-                        <p class="frise__txt__droite">1945 : Les femmes sont autorisées à voter.
+                        <p class="frise__txt__droite">1945: Women are allowed to vote.
                         </p>
                     </div>
                 </div>
@@ -54,19 +54,19 @@
                     <div class="frise__part">
                         <img class="frise__flag__droite" src="./public/icones/flag_etats_unis.png" alt="">
                         <p class="frise__txt__gauche">
-                            1965 : Pour les femmes mariées, la pilule ne devient définitivement légale dans l'intégralité des 50 États qu'après une décision de la Cour Suprême. <br>
-                            1967 : La AAU interdit aux femmes de participer à des compétitions avec des coureurs masculins.
+                            1965: For married women, the pill becomes definitively legal in all 50 states only after a Supreme Court decision. <br>
+                            1967: The AAU prohibits women from competing with male runners.
                         </p>
                     </div>
                     <div class="frise__part">
                         <img class="frise__flag__droite" src="./public/icones/flag_france.png" alt="">
                         <p class="frise__txt__gauche">
-                            1964 : Menie Grégoire publie "Le Métier de femme", un plaidoyer pour l'égalité dans le couple et la contraception.<br>
-                            1964 : L'émission télévisée "Cherchez la femme" de Eliane Victor, qui s'intéresse à la difficulté pour les femmes d'accéder aux postes à responsabilité, est diffusée.<br>
-                            1964 : Le Conseil National de l'Église Réformée de France déclare légitime les méthodes contraceptives.<br>
-                            1965 : Tillion participe à une réunion d'experts sur la "Promotion de la femme", à l'Unesco à Paris.<br>
-                            1965 : La loi réforme les régimes matrimoniaux: une femme mariée peut travailler et ouvrir un compte bancaire sans le consentement de son mari.<br>
-                            1967 : L'Assemblée nationale adopte la loi Neuwirth autorisant la contraception orale mais en interdit la publicité.
+                            1964: Menie Grégoire published "Le Métier de femme", a plea for equality in the couple and contraception.<br>
+                            1964: The television program "Cherchez la femme" by Eliane Victor, which focuses on the difficulty for women to reach positions of responsibility, is broadcast.<br>
+                            1964: The National Council of the Reformed Church of France declared contraceptive methods legitimate.<br>
+                            1965: Tillion participated in a meeting of experts on the "Promotion of Women" at UNESCO in Paris.<br>
+                            1965: The law reforms matrimonial regimes: a married woman can work and open a bank account without her husband's consent.<br>
+                            1967: The National Assembly passed the Neuwirth law authorizing oral contraception but prohibiting its advertising.
                         </p>
                     </div>
                 </div>
@@ -77,25 +77,25 @@
                     <div class="frise__content">
                         <div class="frise__part">
                             <img class="frise__flag__gauche" src="./public/icones/flag_etats_unis.png" alt="">
-                            <p class="frise__txt__droite">1970 : Ruth   Bader Ginsburg co-fonde le "Women's Rights Law Reporter", 1er journal américain qui se concentre exclusivement sur les droits des femmes.<br>
-                            1971 : La Cour suprême rend sa 1ère décision contre la discrimination sexuelle à l'embauche.<br>
-                            1972 : La Cour Suprême reconnaît l'accès des femmes non mariées à la pilule contraceptive.<br>
-                            1972 : Le Sénat adopte l'Amendement visant à garantir l'égalité des droits entre les sexes.
+                            <p class="frise__txt__droite">1970: Ruth Bader Ginsburg co-founded the "Women's Rights Law Reporter", the first American newspaper to focus exclusively on women's rights.<br>
+                            1971: The Supreme Court renders its first decision against sexual discrimination in hiring.<br>
+                            1972: The Supreme Court recognized the access of unmarried women to the contraceptive pill.<br>
+                            1972: The Senate passed the Equal Rights Amendment.
                             </p>
                         </div>
                         <div class="frise__part">
                             <img class="frise__flag__gauche" src="./public/icones/flag_france.png" alt="">
-                            <p class="frise__txt__droite">1970 : Esterel présente sa collection unisexe.<br>
-                            1970 : La loi substitue l'autorité parentale conjointe à la notion de "chef de famille".<br>
-                            1970 : L'association "Laissez-les vivre" est constituée par le Dr Lejeune pour combattre l'avortement.<br>
-                            1971 : Un manifeste signé par 343 femmes est publié par "Le Nouvel Observateur" : il réclame l'accès aux moyens de contraception et le droit à l'avortement.<br>
-                            1971 : Le MLF fait défiler 3k femmes à Paris pour l'avortement et la contraception libres et gratuits.<br>
-                            1972 : La loi introduit l'égalité de rémunération hommes-femmes.<br>
-                            1974 : L'Assemblée nationale vote la Loi Neuwirth qui permet le remboursement et la vente libre aux mineurs des moyens de contraception.<br>
-                            1974 : L'Assemblée nationale vote la loi sur l'interruption volontaire de grossesse, défendue par la ministre de la Santé Veil, elle autorise l'IVG pendant les 10 premières semaines de la grossesse.<br>
-                            1975 : La loi Veil qui autorise l'IVG est promulguée (pour 5 ans).<br>
-                            1975 : L'Assemblée nationale adopte un projet de loi qui autorise le divorce "par consentement mutuel".<br>
-                            1975 : L'Assemblée nationale adopte un projet de loi qui interdit toute discrimination sexiste à l'embauche.
+                            <p class="frise__txt__droite">1970 : Esterel presents its unisex collection.<br>
+                            1970: The law replaces the notion of "head of family" with joint parental authority.<br>
+                            1970: The association "Laissez-les-vivre" is formed by Dr. Lejeune to fight abortion.<br>
+                            1971: A manifesto signed by 343 women was published by "Le Nouvel Observateur": it demanded access to contraception and the right to abortion.<br>
+                            1971: The MLF marches 3k women in Paris for free abortion and contraception.<br>
+                            1972: The law introduced equal pay for men and women.<br>
+                            1974: The National Assembly passed the Neuwirth Law, which allowed the reimbursement and free sale of contraception to minors.<br>
+                            1974: The National Assembly passed the law on voluntary interruption of pregnancy, championed by Health Minister Veil. It authorized abortion during the first 10 weeks of pregnancy.<br>
+                            1975: The Veil law authorizing abortion was enacted (for 5 years).<br>
+                            1975: The National Assembly adopted a bill authorizing divorce "by mutual consent".<br>
+                            1975: The National Assembly adopted a bill prohibiting all sexist discrimination in hiring.
                             </p>
                         </div>
 
@@ -108,17 +108,17 @@
                             <img class="frise__flag__droite" src="./public/icones/flag_etats_unis.png" alt="">
                             <p class="frise__txt__gauche">
                                 1981 : Sojourner Truth entre dans le "National Women's Hall of Fame".<br>
-                                1984 : Geraldine Ferraro devient la 1ère femme nommée comme candidat (démocrate) à la vice-présidence des Etats-Unis.<br>
-                                1987 : La Cour suprême décide que les Clubs Rotary américains doivent s'ouvrir aux femmes.
+                                1984: Geraldine Ferraro became the first woman to be nominated as a (Democratic) candidate for Vice President of the United States.<br>
+                                1987: The Supreme Court ruled that U.S. Rotary clubs must be open to women.
                             </p>
                         </div>
                         <div class="frise__part">
                             <img class="frise__flag__droite" src="./public/icones/flag_france.png" alt="">
-                            <p class="frise__txt__gauche">1980 : L'Assemblée nationale adopte un projet de loi qui interdit le licenciement d'une femme enceinte.<br>
-                            1980 : Le viol est reconnu comme un crime par la loi.<br>
-                            1982 : Un Centre d'information de la femme (CDIF) ouvre ses portes 3 place Danton au Havre.<br>
-                            1982 : L'IVG est remboursée par la Sécurité sociale.<br>
-                            1983 : La Loi sur l'égalité professionnelle interdit toute discrimination en raison du sexe dans la vie professionnelle.
+                            <p class="frise__txt__gauche">1980: The National Assembly passed a bill prohibiting the dismissal of a pregnant woman.<br>
+                            1980: Rape is recognized as a crime by law.<br>
+                            1982 : A Women's Information Center (CDIF) opens its doors at 3 place Danton in Le Havre.<br>
+                            1982: Abortion is reimbursed by the Social Security.<br>
+                            1983: The Law on Professional Equality prohibits any discrimination on the basis of sex in professional life.
                             </p>
                         </div>
                     </div>
@@ -128,13 +128,13 @@
                         <div class="frise__content">
                             <div class="frise__part">
                                 <img class="frise__flag__gauche" src="./public/icones/flag_japon.png" alt="">
-                                <p class="frise__txt__droite">1999 : La contraception est dépénalisée.
+                                <p class="frise__txt__droite">1999: Contraception is decriminalized.
                                 </p>
                             </div>
                             <div class="frise__part">
                                 <img class="frise__flag__gauche" src="./public/icones/flag_france.png" alt="">
-                                <p class="frise__txt__droite">1991 La loi n° 91-73 autorise la publicité pour les préservatifs et certains autres contraceptifs.<br>
-                                1999 : Le Congrès approuve la loi constitutionnelle permettant au législateur de prendre les mesures propres à favoriser l'égalité entre les femmes et les hommes.
+                                <p class="frise__txt__droite">1991: Law 91-73 authorizes advertising for condoms and certain other contraceptives.<br>
+                                1999: Congress approved the constitutional law allowing the legislator to take measures to promote equality between women and men.
                                 </p>
                             </div>
     
@@ -145,19 +145,19 @@
                         <div class="frise__content--gauche">
                             <div class="frise__part">
                                 <img class="frise__flag__droite" src="./public/icones/flag_etats_unis.png" alt="">
-                                <p class="frise__txt__gauche">2000 : Frances Allen s'engage pour la promotion des femmes dans l'informatique.<br>
-                                2006 : L'UNICEF, dans son rapport annuel, affirme que l'amélioration du sort des enfants dans le monde passe par l'élimination des discriminations envers les femmes et leur accès à l'autonomie.
+                                <p class="frise__txt__gauche">2000 : Frances Allen commits to the promotion of women in IT.<br>
+                                2006: UNICEF, in its annual report, states that improving the lot of the world's children involves eliminating discrimination against women and empowering them.
                                 </p>
                             </div>
                             <div class="frise__part">
                                 <img class="frise__flag__droite" src="./public/icones/flag_france.png" alt="">
-                                <p class="frise__txt__gauche">2001 : La loi permet aux médecins libéraux de prescrire des contraceptifs aux mineures sans autorisation parentale.
+                                <p class="frise__txt__gauche">2001: The law allows private doctors to prescribe contraceptives to minors without parental authorization.
                                 </p>
                             </div>
                             <div class="frise__part">
                                 <img class="frise__flag__droite" src="./public/icones/flag_japon.png" alt="">
-                                <p class="frise__txt__gauche">2002 : Des voitures réservées aux femmes durant les heures de pointe sont instaurées sur la ligne Midosuji du métro d'Osaka.<br>
-                                2004 : Des voitures réservées aux femmes sont instaurées toute la journée, en semaine, sur la ligne Midosuji du métro d'Osaka.
+                                <p class="frise__txt__gauche">2002: Women-only cars during rush hour were introduced on the Midosuji line of the Osaka subway.<br>
+                                2004: Women-only cars were introduced all day on weekdays on the Midosuji line of the Osaka subway.
                                 </p>
                             </div>
                         </div>
@@ -168,17 +168,17 @@
                             <div class="frise__content">
                                 <div class="frise__part">
                                     <img class="frise__flag__gauche" src="./public/icones/flag_etats_unis.png" alt="">
-                                    <p class="frise__txt__droite">2010 : L'ancienne Pdte chilienne Bachelet devient SG adjointe de l'ONU, chargée de la promotion des femmes.<br>
-                                    2013 : A la tribune de l'ONU, Malala Yousafzai parle de l'accès à l'éducation pour les filles : "Les extrémistes ont peur des livres et des stylos. Le pouvoir de l'éducation les effraie.<br>
-                                    2016 : La Cour suprême juge illégale une loi texane restreignant l'accès à l'IVG.<br>
-                                    2017 : Schiappa est nommée Secrétaire d'Etat à l'égalité entre les hommes et les femmes.
+                                    <p class="frise__txt__droite">2010: Former Chilean President Bachelet becomes Deputy Secretary-General of the UN, in charge of the promotion of women.<br>
+                                    2013: At the UN podium, Malala Yousafzai speaks about access to education for girls: "Extremists are afraid of books and pens. The power of education scares them.<br>
+                                    2016 : Supreme Court rules Texas law restricting access to abortion illegal.<br>
+                                    2017: Schiappa is appointed Secretary of State for Equality between Men and Women.
                                     </p>
                                 </div>
                                 <div class="frise__part">
                                     <img class="frise__flag__gauche" src="./public/icones/flag_france.png" alt="">
-                                    <p class="frise__txt__droite">2010 : La policière Aurélie Fouquet (26) est touchée de 3 balles lors d'une fusillade et meurt (1ère policière municipale tuée en service).<br>
-                                    2011 : A l'initiative de Blondin, une proposition de loi "visant à supprimer des dispositions obsolètes relatives aux droits des femmes" est enregistrée au Sénat.<br>
-                                    2013 : La loi interdisant aux femmes de porter le pantalon est abrogée.
+                                    <p class="frise__txt__droite">2010 : The policewoman Aurélie Fouquet (26) is hit by 3 bullets during a shooting and dies (1st municipal policewoman killed on duty).<br>
+                                    2011: At the initiative of Blondin, a bill "to remove obsolete provisions relating to women's rights" is registered in the Senate.<br>
+                                    2013 : The law prohibiting women from wearing pants is repealed.
                                     </p>
                                 </div>
         
@@ -190,23 +190,23 @@
                                 <div class="frise__part">
                                     <img class="frise__flag__droite" src="./public/icones/flag_etats_unis.png" alt="">
                                     <p class="frise__txt__gauche">
-                                        2020 : Christina Koch, de retour de l'ISS, atterrit : elle bat le record du plus long séjour dans l'espace pour une femme.<br>
-                                        2021 : L'Arkansas interdit l'avortement, en espérant faire annuler la légalisation de 1973.
+                                        2020: Christina Koch, back from the ISS, lands: she breaks the record for the longest stay in space for a woman.<br>
+                                        2021 : Arkansas bans abortion, hoping to overturn the 1973 legalization.
                                     </p>
                                 </div>
                                 <div class="frise__part">
                                     <img class="frise__flag__droite" src="./public/icones/flag_france.png" alt="">
                                     <p class="frise__txt__gauche">
-                                        2021 : D'Amarzit est nommée Pdte de la Bourse de Paris.<br>
-                                        2021 : L'Assemblée nationale adopte la procréation médicalement assistée (PMA) pour toutes les femmes.<br>
-                                        2021 : Joséphine Baker entrera au Panthéon le 30 novembre (première femme noire).<br>
-                                        2021 : La contraception sera désormais gratuite pour les Françaises jusqu'à 25 ans.
+                                        2021 : D'Amarzit is appointed CEO of the Paris Stock Exchange.<br>
+                                        2021 : The National Assembly passes medically assisted reproduction (MAP) for all women.<br>
+                                        2021 : Josephine Baker will enter the Pantheon on November 30 (first black woman).<br>
+                                        2021 : Contraception will now be free for French women up to age 25.
                                     </p>
                                 </div>
                                 <div class="frise__part">
                                     <img class="frise__flag__droite" src="./public/icones/flag_japon.png" alt="">
                                     <p class="frise__txt__gauche">
-                                        2021 : Yoshiro Mori, le patron des JO de Tokyo, démissionne après ses propos sexistes.
+                                        2021: Yoshiro Mori, the boss of the Tokyo Olympics, resigns after his sexist remarks.
                                     </p>
                                 </div>
                             </div>
@@ -214,8 +214,8 @@
     </main>
     <footer class="footer">
         <h2 class="footer__title">F For Feminism</h2>
-        <h3 class="footer__mention">mentions légales</h3>
-        <p class="footer__txt">Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+        <h3 class="footer__mention">Legal Notice</h3>
+        <p class="footer__txt">Project carried out as part of an educational exercise at the <a class="footer__link" href="http://mmimontbeliard.com/">MMi department of Montbéliard</a></p>
         <ul class="footer__list name">
             <li class="name__item"><span>Quentin</span></li>
             <li class="name__item"><span>Heinis</span></li>
