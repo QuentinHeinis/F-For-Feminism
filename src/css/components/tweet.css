@@ -186,6 +186,10 @@ article.card{
     border-radius: 3px;
 }
 
+.english .card--site__btn{
+    width: 160px;
+}
+
 .button--site__link{
     color: var(--c0);
     text-decoration: none;
