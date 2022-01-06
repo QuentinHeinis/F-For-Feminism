@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr"  x-data="{isOpen: false, darkmode: $persist(false)}" :class="isOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/@alpinejs/persist@3.4.2/dist/cdn.min.js"></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <title>Le féminisme dans Sex education</title>
+</head>
+<body :class="darkmode && 'body--dark'">
+    <header class="header">
+        <div class="header__start">
+            <img class="header__logo logo" src="/public/icones/Logoclair.png" alt="Logo">
+            <img class="header__logo logo--dark" src="/public/icones/Logofoncé.png" alt="Logo" >
+        </div>
+
+        <div class="header__end">
+            <a href="#" class="header__btn--langue langue" >
+                EN
+            </a>
+            <img src="./public/icones/lune_sombre.png" alt="logo mode sombre" class="lune" @pointerdown="darkmode = !darkmode">
+            <img src="./public/icones/soleil_clair.png" alt="logo mode sombre" class="soleil" @pointerdown="darkmode = !darkmode" >
+           
+
+            <div  class="header__navBtn MenuBtn" @pointerdown="isOpen = !isOpen;"
+            :class=" isOpen && 'MenuBtn--open'">
+                <div class="MenuBtn__bar"></div>
+            </div>
+        </div>
+        <nav class="header__menu menu" :class="isOpen && 'menu--open'">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="./index.html">F For Feminism</a></li>
+                <li class="menu__item"><a class="menu__link" href="./evolution_feminisme.html">L’évolution du féminisme dans le monde</a></li> 
+                <li class="menu__item"><a class="menu__link" href="./mark_ruffalo.html">Mark Ruffalo, un homme féministe ?!</a></li>
+                <li class="menu__item"><a class="menu__link" href="./sex_ed.html">Le féminisme dans Sex education</a></li>
+                <li class="menu__item"><a class="menu__link" href="./video.html">Vidéo micro-trottoir</a></li>
+                <li class="menu__item"><a class="menu__link" href="./autres_projets.html">Voir les autres projets</a></li>
+                <li class="menu__item"><a class="menu__link" href="./contact.html">Nous Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">Le féminisme dans Sex education</h1>
+            <img class="hero__img" src="/public/img/filles_bus.webp" alt="photo des filles de Sex Education dans un bus">
+            <p class="hero__dspt">Le féminisme est un sujet peu abordé dans les séries, encore moins pour une série visant un public jeune. Sex education arrive donc à parler de ce sujet sans passer par des subtilités.</p>
+        </section>
+    
+        <section class="article">
+            <h2 class="article__title">Sex education</h2>
+            <img class="article__img--right" src="/public/img/Sex_Education.webp" alt="Affiche de Sex education">
+            <p class="article__txt">Sex education est une série populaire parlant de plein de sujets qui ne sont pas forcément abordés habituellement en société. Passant par Meave avec un caractère fort, Ruby qui passe pour la chef d’une bande intouchable, ou Ola qui interprête le rôle de fille indépendante, les filles ont chacun une histoire propre et originale. Parmi elles, Aimee, une adolescente qui incarne la gentillesse. Cependant, <strong>elle se fait agresser sexuellement dans le bus dans le début de la deuxième saison.</strong> Étant dans une situation compliquée, elle n’a pas su comment réagir. Quand Meave, sa meilleure amie, la voit avec une tache sur son pantalon, elle demande inquiète ce qu’il se passe, Aimee lui explique, mais en incohérence avec le récit, elle raconte l’histoire comme si c’était normal, sans trouver cet acte anormal. C’est alors que Meave lui fait la réflexion, et l'incite à porter plainte. Après ça, <strong>Aimee est impossible de reprendre le bus en voyant le visage de son agresseur sur tous les passagers du bus.</strong> Elle se contraint donc à venir à pied tous les jours au lieu de prendre ce fameux bus. </p>
+    
+            <h2 class="article__title">Points communs et instant &nbsp;<a class="article__adef" id="motadef" href="sex_ed.html#motdef">#MeToo</a></h2>
+    
+            <p class="article__txt">Peu après dans la série, plusieurs filles sont mises en retenue à cause de vulgarités écrites à propos d’une enseignante sur un miroir au rouge à lèvre. Personne ne voulant se dénoncer, elles ont eu plusieurs punitions tels que entourer tous les “a” sur un journal. Cependant, avant la fin, elles disent à l’enseignante que cela n’a aucun intérêt. L'enseignante leur fait donc trouver un point commun entre elles, des femmes pour préparer un exposé. Elles vont donc parler de tout et n’importe quoi, jeux de rôles, shopping ou même du chocolat, mais <strong>la tension monte entre Ola et Meave</strong>, ce qui rend Aimee encore plus mal car elle se sent pas mieux par rapport à cette histoire du bus,<strong> elle se met donc à pleurer car elle peut plus prendre le bus à cause de cette agression</strong>, toute les filles se réunissent autour d’elle pour la réconforter. </p>
+            <img class="article__img" src="./public/img/sex_ed.webp" alt="">
+            <p class="article__txt">Elle s’explique et raconte son point de vue sur la situation. C’est alors que les filles,<strong> dans un beau moment #MeToo vont les unes après les autres raconter une histoire de harcèlement, d’attouchement, d’exhibitions.</strong> C’est alors que Viv explique que “statistiquement, deux tiers des filles font l’expérience d’un contact sexuel non consenti dans les espaces publics avant l'âge de 21 ans”. Elles se mettent d’accord sur le fait que le pénis de l’homme est un objet de pouvoir. Elles sortent donc de retenue en disant à leur enseignante, que mise à part les <q>pénis non consensuels</q>, elles n’avaient pas grand chose en commun. Mais l’on remarque la difficulté pour les filles et femmes de parler de ce genre d’actes.</p>
+            
+            <h2 class="article__title">Colère et le soulagement</h2>
+            <img class="article__img" src="./public/img/Sex_education_bus_scene_1.webp" alt="">
+            <p class="article__txt">Après ça, les filles en colère contre les hommes, sont allées exploser des objets tout en criant leurs histoires et leurs problèmes. Ce moment intense nous fait ressentir à tous leur immense colère. L’épisode se finit sur un magnifique moment où toutes les filles qui se trouvaient en retenue se regroupent pour aider Aimee à prendre le bus à nouveau, en montant toutes ensemble dedans. <strong>Un grand moment de solidarité</strong> malgré des personnages complètement opposés sur certains plans.</p>
+        </section>
+        <section class="glossaire">
+            <h2 class="glossaire__title">Glossaire</h2>
+            <dl class="glossaire__list">
+                <dt class="glossaire__adefinir"><a class="glossaire__adef" id="motdef" href="/sex_ed.html#motadef">#MeToo:</a></dt>
+                <dd class="glossaire__definition">un mouvement social qui encourage la prise de parole des femmes en rapport avec des viols, agressions sexuels etc</dd>
+            </dl>
+        </section>
+        <section class="articles">
+            <header class="articles__header">
+                <h2 class="articles__title">D'autres renseignements</h2>
+            </header>
+            <article class="articles__card card">
+                <div class="card__designLeft"></div>
+                <div class="card__content art">
+                    <h3 class="card__title">Vidéo micro-trottoir</h3>
+                    <img class="card__img" src="./public/img/mic_trot.webp" alt="test">
+                    <p class="card__txt">Dans le cadre d'un projet, un micro trottoir à été tourné afin de poser des questions sur le féminisme aux gens.</p>                
+                </div>
+                <div class="card__btn button">
+                    <a href="video.html" class="button__link">En savoir plus</a>
+                </div>
+                <div class="card__designRight"></div>
+            </article>
+            <article class="articles__card card">
+                <div class="card__designLeft"></div>
+                <div class="card__content art">
+                    <h3 class="card__title">Les Autres projets sur le féminisme</h3>
+                    <img class="card__img" src="./public/img/image_article.webp" alt="test">
+                    <p class="card__txt">Dans le cadre d'un projet, les autres élèves de mmi 1 ont ainsi fait leurs sites. En voici une partie...</p>
+                </div>
+                <div class="card__btn button">
+                    <a href="autres_projets.html" class="button__link">En savoir plus</a>
+                </div>
+                <div class="card__designRight"></div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__title">F For Feminism</h2>
+        <h3 class="footer__mention">mentions légales</h3>
+        <p class="footer__txt">Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+        <ul class="footer__list name">
+            <li class="name__item"><span>Quentin</span></li>
+            <li class="name__item"><span>Heinis</span></li>
+            <li class="name__item"><span>Groupe B1</span></li>
+        </ul>
+        <a class="footer__link" href="mailto:delta.phsycose@gmail.com">delta.phsycose@gmail.com</a>
+        <div class="footer__social">
+            <a href="https://instagram.com/quentinheinis?utm_medium=copy_link"><img class="footer__icon" src="./public/icones/instagram.png" alt="instagram"></a>
+            <a href="https://discord.gg/YTuU8CGf9s"><img class="footer__icon" src="./public/icones/discord.png" alt="discord"></a>
+            <a href="https://www.youtube.com/channel/UCvghvCF6eR90rzE1f3P8d6g"><img class="footer__icon" src="./public/icones/youtube.png" alt="youtube"></a>
+            <a href="https://www.linkedin.com/in/quentin-heinis-731ab8223"><img class="footer__icon" src="./public/icones/linkedin.png" alt="linkedin"></a>
+        </div>
+    </footer>
+</body>
+</html>

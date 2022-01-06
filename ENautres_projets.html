@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr"  x-data="{isOpen: false, darkmode: $persist(false)}" :class="isOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/@alpinejs/persist@3.4.2/dist/cdn.min.js"></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <title>D'autres projets</title>
+</head>
+<body :class="darkmode && 'body--dark'">
+    <header class="header">
+        <div class="header__start">
+            <img class="header__logo logo" src="/public/icones/Logoclair.png" alt="Logo">
+            <img class="header__logo logo--dark" src="/public/icones/Logofoncé.png" alt="Logo" >
+        </div>
+
+        <div class="header__end">
+            <a href="#" class="header__btn--langue langue" >
+                EN
+            </a>
+            <img src="./public/icones/lune_sombre.png" alt="logo mode sombre" class="lune" @pointerdown="darkmode = !darkmode">
+            <img src="./public/icones/soleil_clair.png" alt="logo mode sombre" class="soleil" @pointerdown="darkmode = !darkmode" >
+           
+
+            <div  class="header__navBtn MenuBtn" @pointerdown="isOpen = !isOpen;"
+            :class=" isOpen && 'MenuBtn--open'">
+                <div class="MenuBtn__bar"></div>
+            </div>
+        </div>
+        <nav class="header__menu menu" :class="isOpen && 'menu--open'">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="./index.html">F For Feminism</a></li>
+                <li class="menu__item"><a class="menu__link" href="./evolution_feminisme.html">L’évolution du féminisme dans le monde</a></li> 
+                <li class="menu__item"><a class="menu__link" href="./mark_ruffalo.html">Mark Ruffalo, un homme féministe ?!</a></li>
+                <li class="menu__item"><a class="menu__link" href="./sex_ed.html">Le féminisme dans Sex education</a></li>
+                <li class="menu__item"><a class="menu__link" href="./video.html">Vidéo micro-trottoir</a></li>
+                <li class="menu__item"><a class="menu__link" href="./autres_projets.html">Voir les autres projets</a></li>
+                <li class="menu__item"><a class="menu__link" href="./contact.html">Nous Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1 class="hero__title"></h1>
+            <p class="hero__dspt">Dans le cadre d'un projet, les autres élèves de mmi 1 ont ainsi fait leurs sites. En voici une partie…</p>
+        </div>
+        <article class="articles__card--site card--site">
+            <div class="card--site__design"></div>
+                <div class="card--site__content">
+                    <h3 class="card--site__title">Japaminism</h3>
+                    <p class="card--site__from">Un site de Alicia Iversenc</p>
+                </div>
+                <div class="card--site__btn button">
+                    <a href="evolution_feminisme.html" class="button--site__link">Voir le site</a>
+                </div>     
+        </article>
+        <article class="articles__card--site card--site">
+            <div class="card--site__design"></div>
+                <div class="card--site__content">
+                    <h3 class="card--site__title">Actus Egypte Fem</h3>
+                    <p class="card--site__from">Le site de Héléna Jaeglé
+                    </p>
+                </div>
+                <div class="card--site__btn button">
+                    <a href="evolution_feminisme.html" class="button--site__link">Voir le site</a>
+                </div>     
+        </article>
+        <article class="articles__card--site card--site">
+            <div class="card--site__design"></div>
+                <div class="card--site__content">
+                    <h3 class="card--site__title">Femin'Art</h3>
+                    <p class="card--site__from">Le site de JOURY	Titouan
+                    </p>
+                </div>
+                <div class="card--site__btn button">
+                    <a href="evolution_feminisme.html" class="button--site__link">Voir le site</a>
+                </div>     
+        </article>
+        <article class="articles__card--site card--site">
+            <div class="card--site__design"></div>
+                <div class="card--site__content">
+                    <h3 class="card--site__title">Le féminisme, une lutte sans fin ?</h3>
+                    <p class="card--site__from">Le site de Marion Gillot
+                    </p>
+                </div>
+                <div class="card--site__btn button">
+                    <a href="evolution_feminisme.html" class="button--site__link">Voir le site</a>
+                </div>     
+        </article>
+        <article class="articles__card--site card--site">
+            <div class="card--site__design"></div>
+                <div class="card--site__content">
+                    <h3 class="card--site__title">Equality</h3>
+                    <p class="card--site__from">Le site de GOLFIER	Maxime</p>
+                </div>
+                <div class="card--site__btn button">
+                    <a href="evolution_feminisme.html" class="button--site__link">Voir le site</a>
+                </div>     
+        </article>
+        <article class="articles__card--site card--site">
+            <div class="card--site__design"></div>
+                <div class="card--site__content">
+                    <h3 class="card--site__title">Gender Education</h3>
+                    <p class="card--site__from">Le site de HIENNE	Allan
+                    </p>
+                </div>
+                <div class="card--site__btn button">
+                    <a href="evolution_feminisme.html" class="button--site__link">Voir le site</a>
+                </div>     
+        </article>
+        <article class="articles__card--site card--site">
+            <div class="card--site__design"></div>
+                <div class="card--site__content">
+                    <h3 class="card--site__title">Equalshare</h3>
+                    <p class="card--site__from">Le site de GROS	Eliot
+                    </p>
+                </div>
+                <div class="card--site__btn button">
+                    <a href="evolution_feminisme.html" class="button--site__link">Voir le site</a>
+                </div>     
+        </article>
+        <article class="articles__card--site card--site">
+            <div class="card--site__design"></div>
+                <div class="card--site__content">
+                    <h3 class="card--site__title">Femusic</h3>
+                    <p class="card--site__from">Le site de Heuguet	Antonin
+                    </p>
+                </div>
+                <div class="card--site__btn button">
+                    <a href="evolution_feminisme.html" class="button--site__link">Voir le site</a>
+                </div>     
+        </article>
+        <article class="articles__card--site card--site">
+            <div class="card--site__design"></div>
+                <div class="card--site__content">
+                    <h3 class="card--site__title">Hertha</h3>
+                    <p class="card--site__from">Le site de Gafforelli	Fabio
+                    </p>
+                </div>
+                <div class="card--site__btn button">
+                    <a href="evolution_feminisme.html" class="button--site__link">Voir le site</a>
+                </div>     
+        </article>
+        <article class="articles__card--site card--site">
+            <div class="card--site__design"></div>
+                <div class="card--site__content">
+                    <h3 class="card--site__title">Against Feminism</h3>
+                    <p class="card--site__from">Le site de Gurbuz	Emre
+                    </p>
+                </div>
+                <div class="card--site__btn button">
+                    <a href="evolution_feminisme.html" class="button--site__link">Voir le site</a>
+                </div>     
+        </article>
+
+
+    </main>
+    <footer class="footer">
+        <h2 class="footer__title">F For Feminism</h2>
+        <h3 class="footer__mention">mentions légales</h3>
+        <p class="footer__txt">Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+        <ul class="footer__list name">
+            <li class="name__item"><span>Quentin</span></li>
+            <li class="name__item"><span>Heinis</span></li>
+            <li class="name__item"><span>Groupe B1</span></li>
+        </ul>
+        <a class="footer__link" href="mailto:delta.phsycose@gmail.com">delta.phsycose@gmail.com</a>
+        <div class="footer__social">
+            <a href="https://instagram.com/quentinheinis?utm_medium=copy_link"><img class="footer__icon" src="./public/icones/instagram.png" alt="instagram"></a>
+            <a href="https://discord.gg/YTuU8CGf9s"><img class="footer__icon" src="./public/icones/discord.png" alt="discord"></a>
+            <a href="https://www.youtube.com/channel/UCvghvCF6eR90rzE1f3P8d6g"><img class="footer__icon" src="./public/icones/youtube.png" alt="youtube"></a>
+            <a href="https://www.linkedin.com/in/quentin-heinis-731ab8223"><img class="footer__icon" src="./public/icones/linkedin.png" alt="linkedin"></a>
+        </div>
+    </footer>
+</body>
+</html>
