@@ -9,8 +9,9 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <title>F For Feminism</title>
 </head>
-<body :class="darkmode && 'body--dark'">
-    <header class="header">
+<body :class="darkmode && 'body--dark'" x-data="{ atTop: true }">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+            :class="{ 'header--atTop' : !atTop }">
         <div class="header__start">
             <img class="header__logo logo" src="/public/icones/Logoclair.png" alt="Logo">
             <img class="header__logo logo--dark" src="/public/icones/Logofoncé.png" alt="Logo" >

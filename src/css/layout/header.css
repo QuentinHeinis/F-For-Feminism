@@ -8,6 +8,7 @@
     z-index: 10;
     top: 0;
     left: 0; 
+    transition: all .3s ease-in-out;
 }
 
 .header__navBtn{
@@ -21,8 +22,22 @@
     z-index: 16;
 }
 
+.MenuBtn{
+    position: relative;
+}
 
+.header--atTop{
+    background-color: transparent;
+}
 
+.header--atTop .header__btn--langue, .header--atTop .lune, .header--atTop .soleil, .header--atTop .header__logo{
+    visibility: hidden;
+}
+.header--atTop .MenuBtn__bar, .header--atTop .MenuBtn__bar::after, .header--atTop .MenuBtn__bar::before{
+    background-color: var(--c7);
+    width: 100%;
+    
+}
 
 
 
@@ -97,7 +112,17 @@
 }
 
 
+.header--frise .MenuBtn__bar, .header--frise .MenuBtn__bar::before, .header--frise .MenuBtn__bar::after{ 
+    background-color: var(--c0);
+}
+
+
 /* header dark */
+
+.body--dark .header--frise .MenuBtn__bar,.body--dark .header--frise .MenuBtn__bar::before,.body--dark .header--frise .MenuBtn__bar::after{ 
+    background-color: var(--c7);
+}
+
 .body--dark .header{
     background-color: var(--c0);
 }

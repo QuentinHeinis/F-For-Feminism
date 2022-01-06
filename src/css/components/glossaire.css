@@ -27,3 +27,18 @@
     color: var(--c5);
     font-weight: bold;
 }
+
+.glossaire__definition, .glossaire__adefinir{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.glossaire__definition{
+    margin-left: 0;
+    width: 100%;
+}
+
+.glossaire__list{
+    margin-right: 20px;
+    margin-left: 20px;
+}
