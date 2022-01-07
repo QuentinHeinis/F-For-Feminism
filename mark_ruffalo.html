@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/@alpinejs/persist@3.4.2/dist/cdn.min.js"></script>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="/src/js/fonctions.js"></script>
     <title>Mark Ruffalo, un homme féministe ?!</title>
 </head>
 <body :class="darkmode && 'body--dark'">
@@ -44,7 +46,11 @@
     <main>
         <section class="hero">
             <h1 class="hero__title">Mark Ruffalo, un homme féministe ?!</h1>
-            <img class="hero__img" src="/public/img/Mark_ruffalo.webp" alt="photo de Mark Ruffalo">
+            <div class="hero__imgContent" >
+                <img @mouseover="showLegende(5);" 
+                @mouseleave="hideLegende(5);" class="hero__img" src="/public/img/Mark_ruffalo.webp" alt="photo de Mark Ruffalo">
+                <span class="hero__description description5">Photo de Mark Ruffalo</span>
+            </div>
             <p class="hero__dspt">Quand on parle de féminisme, on peut se dire que seule une femme peut être féministe. Et pourtant non, Mark Ruffalo se dit féministe. De plus, le célèbre acteur du “titan vert” plus connu sous le nom de Hulk affiche régulièrement son côté féministe.</p>
         </section>
     
@@ -64,20 +70,33 @@
             <p class="article__txt">S’il est maintenant évident que Mark Ruffalo est bel et bien un homme féministe. Il est tout aussi évident que ce n’est pas le seul féministe masculin. </p>
     
             <div class="article__galerie">
-                <img class="article__img--galerie" src="/public/img/daniel_raddcliff.webp" alt="Photo de Daniel Raddcliff">
+                <div class="article__imgContent">
+                    <img @click="showLegende(1);" class="article__img--galerie" src="/public/img/daniel_raddcliff.webp" alt="Photo de Daniel Raddcliff">
+                    <span @click="hideLegende(1);" class="article__txtdescrition--galerie description1">Photo de Daniel Raddcliff</span>
+                </div>
                 <p class="article__txt--galerie">Daniel Radcliffe, la star de Harry Potter va lui s’indigner face <strong>au manque de femme à Hollywood </strong> ainsi qu’aux rôles féminins écrits par des hommes pour la plus part des cas.</p>
             </div>
             <div class="article__galerie">
-                <img class="article__img--galerie" src="/public/img/joseph_gordon_levitt.webp" alt="Photo de Joseph Gordon Levitt">
+                <div class="article__imgContent">
+                    <img @click="showLegende(2);"  class="article__img--galerie" src="/public/img/joseph_gordon_levitt.webp" alt="Photo de Joseph Gordon Levitt">
+                    <span @click="hideLegende(2);" class="article__txtdescrition--galerie description2">Photo de Joseph Gordon Levitt</span>
+                </div>
                 <p class="article__txt--galerie">Joseph Gordon Levitt se proclame féministe. Étant plus jeune, sa mère va leur donner, à son frère et lui, une éducation féministe. Elle leur montrait souvent une société dont <strong>la culture définissait la femme comme un objet.</strong></p>
                 
             </div>
             <div class="article__galerie">
-                <img class="article__img--galerie" src="/public/img/Benedict_Cumberbatch.webp" alt="Photo de Benedict Cumberbatch">
+                <div class="article__imgContent">
+                    <img @click="showLegende(3);"  class="article__img--galerie" src="/public/img/Benedict_Cumberbatch.webp" alt="Photo de Benedict Cumberbatch">
+                    <span @click="hideLegende(3);" class="article__txtdescrition--galerie description3">Photo de Benedict Cumberbatch</span>
+                </div>
+
                 <p class="article__txt--galerie">Benedict Cumberbatch prend position comme féministe en acceptant que <strong>des rôles où l’égalité salariale sera respectée.</strong></p>
             </div>
             <div class="article__galerie">
-                <img class="article__img--galerie" src="/public/img/Daniel_Craig.webp" alt="Photo de Daniel Craig">
+                <div class="article__imgContent">
+                    <img @click="showLegende(4);" class="article__img--galerie" src="/public/img/Daniel_Craig.webp" alt="Photo de Daniel Craig">
+                    <span @click="hideLegende(4);" class="article__txtdescrition--galerie description4">Photo de Daniel Craig</span>
+                </div>
                 <p class="article__txt--galerie">Daniel Craig s’est travesti en 2011 afin de<strong> dénoncer les inégalités entre hommes et femmes</strong> dans le monde du travail.</p>
                 
             </div>

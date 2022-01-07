@@ -16,7 +16,7 @@
 }
 
 .hero__img{
-    width: min(75%, 375px);
+    width: min(75vw, 375px);
     height: auto;
     display: flex;
 }
@@ -37,8 +37,44 @@
     margin-bottom: 27px;
 }
 
+
+.hero__imgContent{
+    position: relative;
+    width: min(75vw, 375px);
+    display: flex;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.hero__description{
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: .3s linear;
+    height: 70px;
+    display: flex;
+    font-size: var(--footer3);
+    align-items: center;
+    justify-content: center;
+    width: min(75vw, 375px);
+    background-color:rgba(246, 239, 221, .8) ;
+    color: var(--c6);
+}
+
+
+
+
 /* dark mode */
 
 .body--dark .hero::after{
     background-color: var(--c0);
+}
+
+.body--dark .hero__description{
+    color: var(--c4);
+}
+
+.body--dark .hero__description{
+    background-color: rgba(27, 4, 22, .8);
+    color: var(--c1);
 }
