@@ -26,18 +26,6 @@
     position: relative;
 }
 
-.header--atTop{
-    background-color: transparent;
-}
-
-.header--atTop .header__btn--langue, .header--atTop .lune, .header--atTop .soleil, .header--atTop .header__logo{
-    visibility: hidden;
-}
-.header--atTop .MenuBtn__bar, .header--atTop .MenuBtn__bar::after, .header--atTop .MenuBtn__bar::before{
-    background-color: var(--c7);
-    width: 100%;
-    
-}
 
 
 
