@@ -1,0 +1,64 @@
+@import url('../utils/variables.css');
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--c0);
+}
+a{ 
+    color: var(--c6);
+    text-align: center;
+    text-decoration: none;
+}
+
+a p{
+    margin-bottom: 75px;
+    margin-top: 75px;
+    position: relative;
+}
+
+a p::before{
+    content: '';
+    position: absolute;
+    background-color: var(--c1);
+    height: 10px;
+    width: 50%;
+    left: -10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.middle{
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form{
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+text-align: center;
+}
+
+.body--dark{
+    background-color: var(--c7);
+    color: var(--c0);
+  }
+
+
+.body--dark a{ color: var(--c1);}
+
+.body--dark a p::before{
+    background-color: var(--c6);
+}
