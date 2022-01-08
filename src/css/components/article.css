@@ -33,8 +33,6 @@
 
 .article__img--right{
     width: min(30vw, 100px);
-    margin-left: 5px;
-    margin-right: 20px;
     float: right;
 }
 
@@ -100,6 +98,16 @@
     width: min(60vw, 375px);
     margin-right: auto;
     margin-left: auto;
+}
+
+.article__imgContent--right{
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    margin-left: 5px;
+    display: flex;
+    overflow-x: hidden;
+    width: min(30vw, 100px);
 }
 
 /* dark mode */
