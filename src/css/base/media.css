@@ -13,3 +13,23 @@ figcaption {
 }
 
 
+.hero__description, .article__txtdescrition--galerie, .article__txtdescrition{
+  position: absolute;
+  bottom: 0;
+  color: var(--c6);
+  font-size: var(--footer3);
+  background-color:rgba(246, 239, 221, .8) ;
+  transform: translateX(-100%);
+  transition: .3s linear;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  Dark mode  */
+
+.body--dark .hero__description, .body--dark .article__txtdescrition--galerie, .body--dark .article__txtdescrition{
+  background-color: rgba(27, 4, 22, .8);
+  color: var(--c1);
+}

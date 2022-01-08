@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/@alpinejs/persist@3.4.2/dist/cdn.min.js"></script>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="/src/js/fonctions.js"></script>
     <title>Evolution of Feminism</title>
 </head>
 <body :class="darkmode && 'body--dark'">
@@ -44,14 +46,22 @@
     <main>
         <div class="hero">
             <h1 class="hero__title">Evolution of Feminism around the World</h1>
-            <img class="hero__img" src="/public/img/image_article.webp" alt="Feminist women from around the world">
+            <div class="hero__imgContent" >
+                <span class="hero__description description1">Feminist women from around the world</span>
+                <img @mouseover="showLegende(1);" 
+                @mouseleave="hideLegende(1);" class="hero__img" src="/public/img/image_article.webp" alt="Feminist women from around the world">
+            </div>
             <p class="hero__dspt">Feminism has for each Country a place less or more important. From one place to another around the world, Feminism will be developed at another scale. This scale will vary in times and impacts.</p>
         </div>
     
     
         <section class="article">
             <h2 class="article__title">Feminism in the United States</h2>
-            <img class="article__img" src="/public/img/feminisme_us.webp" alt="Figure of feminism in the United States">
+            <div class="article__imgContent">
+                <img @mouseover="showLegende(2);" 
+                @mouseleave="hideLegende(2);"   class="article__img" src="/public/img/feminisme_us.webp" alt="Figure of feminism in the United States">
+                <span class="article__txtdescrition description2">Figure of feminism in the United States</span>
+            </div>
             <p class="article__txt">
                 In the United States, the laws about women's status came from the British regime. It is a <a class="article__adef" id="motadef" href="./evolution_feminisme.html#motdef">doctrine</a> which puts the woman under the cover of the identity of the husband. A philosophy which should protect women. However, the autonomy of the woman is limited. The husband has all the authority on the woman, it is hard for them to get things going forwards. But They finally succeeded to elaborate the basics to start a political battle.
             </p>
@@ -63,7 +73,11 @@
             </p>
     
             <h2 class="article__title">Feminism in France</h2>
-            <img class="article__img" src="/public/img/Marie-Olympe-de-Gouges.webp" alt="Olympe de Gouges">
+            <div class="article__imgContent">
+                <img @mouseover="showLegende(3);" 
+                @mouseleave="hideLegende(3);"   class="article__img" src="/public/img/Marie-Olympe-de-Gouges.webp" alt="Olympe de Gouges">
+                <span class="article__txtdescrition description3">Olympe de Gouges</span>
+            </div>
             <p class="article__txt">In France, one of the first feminist is Olympe de Gouges. She published in 1791, the Declaration of woman’s rights and the citizen, the first article is saying <q>the woman born free and stays equal to the man’s rights.</q> However, in 1804, the civil code of Napoleon subjects the woman legally to her husband. Then, under the 3rd republic, in 1870, <strong>women could start having rights.</strong>They first got access to instruction, then rights about work and access to many works.</p>
             <p class="article__txt">
                 It is only in the 50’s that womens gots many more rights. To start in 1945, women were able to votes as same as men. Then in 1946, the equality between women and men was written in the Constitution. It was only in 1991 that the first woman, Edith Cression, in France got elected as 1st minister.
@@ -73,7 +87,11 @@
             </p>
     
             <h2 class="article__title">Feminism in Japan</h2>
-            <img class="article__img" src="/public/img/Akiko_Yosano.webp" alt="Akiko Yosano">
+            <div class="article__imgContent">
+                <img @mouseover="showLegende(4);" 
+                @mouseleave="hideLegende(4);"   class="article__img" src="/public/img/Akiko_Yosano.webp" alt="Akiko Yosano">
+                <span class="article__txtdescrition description4">Akiko Yosano</span>
+            </div>
             <p class="article__txt">
                 Between 1868 and 1912 in Japan, thanks to industrialisation and urbanisation, the authority of the Husband on women decreased. However, in 1898, the new civil code denied the rights of women. <strong>Which has the effect of submitting the women under the men.</strong>
             </p>
