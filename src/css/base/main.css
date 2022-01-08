@@ -10,9 +10,15 @@ body {
     font-family: 'liberation_sansregular', sans-serif;
 }
 
-strong,
+strong, em, 
 q{
     color: var(--c5);
+}
+
+strong, em{
+  font-weight: bold;
+  font-style: normal;
+  white-space: normal;
 }
 
 
@@ -47,6 +53,6 @@ section a{
 }
 
 .body--dark strong, .body--dark
-q{
+q, .body--dark em{
     color: var(--c4);
 }
