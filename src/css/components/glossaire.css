@@ -42,3 +42,17 @@
     margin-right: 20px;
     margin-left: 20px;
 }
+
+/*  Dark mode  */
+
+.body--dark .glossaire__adef{
+    color: var(--c4);
+}
+
+ .body--dark .glossaire__title::before{
+    background-color: var(--c0);
+}
+
+.body--dark .glossaire__title{
+    color: var(--c0);
+}
