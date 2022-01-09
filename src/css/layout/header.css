@@ -84,9 +84,11 @@
     border: none;
 }
 
-.logo{
+
+
+.logo, .header__logoLink{
     height: 32px;
-    width: auto;
+    width: 32px;
     position: absolute;
     left: 0;
 }
